@@ -1,0 +1,49 @@
+// reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// text direction
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  direction: rtl;
+}
+// fonts imports
+@font-face {
+  font-family: "Open-Sans";
+  src: url(../src/fonts/Open_Sans/OpenSans-VariableFont_wdthwght.ttf)
+    format("truetype");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+// spacing
+$small-spacing: 1.5rem;
+// $medium-spacing: 2rem;
+// $large-spacing: 3rem;
+
+// color palette
+
+// Layout & Grid
+
+// Grid system: 12-column or flexbox/CSS Grid
+// Breakpoints:
+// Container max-width:
+// Content width: 65-75 characters per line for readability
+
+// Component Standards
+
+// Border radius: 4-8px for consistency
+// Button heights: 40-48px minimum for touch targets
+// Input field heights: Match button heights
+// Icon sizes: 16px, 20px, 24px standard sizes
+// Shadows: Subtle elevation system (2-4 levels)
