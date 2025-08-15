@@ -13,7 +13,7 @@
     rgba(10, 0, 0, 1) 100%
   );
   .hero-image-wrap {
-    max-width: 500px;
+    max-width: 450px;
     img {
       max-width: 100%;
       height: auto;
@@ -33,68 +33,37 @@
   }
   .hero-cta-wrap {
     margin-top: setup.$small-spacing;
-
+    text-align: center;
     button {
-      background-image: linear-gradient(
-        to right,
-        #31e3ff 0%,
-        #20535b 51%,
-        #2d3140 100%
-      );
+      @include mixin.button-style;
 
-      transition: 0.5s;
-      background-size: 200% auto;
-      color: white;
-      border-radius: 10px;
-      width: 100%;
+      position: relative;
+      width: 75%;
 
-      font-family: "Open-Sans";
-      font-weight: 700;
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      color: black;
+      overflow: hidden;
+      transition: all 0.5s ease;
 
-      border: none;
-      padding: 0.5em;
-      border-radius: 5px;
-
-      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(0deg, transparent, transparent 30%, white);
+        transform: rotate(-45deg);
+        transition: all 0.5s ease;
+        opacity: 0;
+      }
 
       &:hover {
-        background-position: right center;
-        color: #fff;
-        box-shadow: 0 0 3px #eee;
-        text-shadow: 0px 0px 4px rgb(38, 45, 56);
-        text-decoration: none;
+        transform: scale(1.03);
+        box-shadow: 0 0 5px setup.$accent-color;
+      }
+      &:hover::before {
+        opacity: 1;
+        transform: rotate(-45deg) translateY(400%);
       }
     }
   }
-}
-
-// erease
-.btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #f09819 0%,
-    #edde5d 51%,
-    #f09819 100%
-  );
-}
-.btn-grad {
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-}
-
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
 }

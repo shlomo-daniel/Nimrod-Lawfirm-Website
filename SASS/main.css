@@ -23,6 +23,30 @@ p {
   font-style: normal;
   font-display: swap;
 }
+nav {
+  min-height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1f21;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 .hero-section {
   display: flex;
   justify-content: space-evenly;
@@ -32,7 +56,7 @@ p {
   background: radial-gradient(circle, rgb(49, 55, 71) 0%, rgb(10, 0, 0) 100%);
 }
 .hero-section .hero-image-wrap {
-  max-width: 500px;
+  max-width: 450px;
 }
 .hero-section .hero-image-wrap img {
   max-width: 100%;
@@ -55,14 +79,10 @@ p {
 }
 .hero-section .hero-cta-wrap {
   margin-top: 1.5rem;
+  text-align: center;
 }
 .hero-section .hero-cta-wrap button {
-  background-image: linear-gradient(to right, #31e3ff 0%, #20535b 51%, #2d3140 100%);
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
-  width: 100%;
+  background-image: linear-gradient(90deg, rgb(91, 227, 248) 0%, rgb(189, 246, 255) 81%, rgb(219, 251, 255) 100%);
   font-family: "Open-Sans";
   font-weight: 700;
   font-size: 1.5rem;
@@ -72,34 +92,28 @@ p {
   padding: 0.5em;
   border-radius: 5px;
   cursor: pointer;
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.hero-section .hero-cta-wrap button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, white);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
 }
 .hero-section .hero-cta-wrap button:hover {
-  background-position: right center;
-  color: #fff;
-  box-shadow: 0 0 3px #eee;
-  text-shadow: 0px 0px 4px rgb(38, 45, 56);
-  text-decoration: none;
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #5be3f8;
 }
-
-.btn-grad {
-  background-image: linear-gradient(to right, #f09819 0%, #edde5d 51%, #f09819 100%);
-}
-
-.btn-grad {
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-}
-
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+.hero-section .hero-cta-wrap button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(400%);
 }/*# sourceMappingURL=main.css.map */
