@@ -7,6 +7,17 @@
   letter-spacing: -2px;
 }
 
+@mixin glass-background {
+  padding: 0.3rem;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: #ffffff0f;
+  background-image: linear-gradient(#ffffff29, #fff0);
+  border: 1px solid #ffffff14;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px 1px #ffffff29;
+}
+
 @mixin button-style {
   background-image: linear-gradient(
     90deg,
