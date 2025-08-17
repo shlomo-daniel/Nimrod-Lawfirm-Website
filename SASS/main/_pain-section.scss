@@ -1,0 +1,36 @@
+@use "../setup";
+@use "../mixin";
+
+.pain-section {
+  flex-direction: column;
+
+  .pain-card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: setup.$medium-spacing;
+    padding: setup.$medium-spacing;
+    @include mixin.glass-background;
+
+    background-color: rgba(216, 216, 216, 0.397);
+
+    .pain-info {
+      display: flex;
+      flex-direction: column;
+      gap: setup.$small-spacing;
+
+      font-family: setup.$main-font;
+      ul {
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+  .pain-image-wrap {
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
+}
