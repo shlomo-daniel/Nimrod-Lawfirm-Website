@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-evenly;
   min-height: min-content;
-
+  padding-top: 6rem;
+  padding-inline: setup.$medium-spacing;
   background-color: #313747;
   background: radial-gradient(
     circle,
