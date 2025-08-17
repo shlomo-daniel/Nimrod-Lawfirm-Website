@@ -35,6 +35,7 @@
   .hero-cta-wrap {
     margin-top: setup.$small-spacing;
     text-align: center;
+
     button {
       @include mixin.button-style;
 
