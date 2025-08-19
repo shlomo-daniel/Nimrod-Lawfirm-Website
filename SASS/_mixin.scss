@@ -2,9 +2,16 @@
 @mixin largest-font {
   font-family: "Open-Sans";
   font-weight: 400;
-  font-size: calc(1.5rem + 2vw);
+  font-size: calc(2rem + 2vw);
   line-height: 1;
   letter-spacing: -2px;
+}
+@mixin medium-font {
+  font-family: "Open-Sans";
+  font-weight: 400;
+  font-size: 1.25rem;
+  // line-height: 1;
+  // letter-spacing: -2px;
 }
 
 @mixin glass-background {

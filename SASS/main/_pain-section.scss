@@ -2,14 +2,14 @@
 @use "../mixin";
 
 .pain-section {
-  flex-direction: column;
-
   .pain-card {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     gap: setup.$medium-spacing;
     padding: setup.$medium-spacing;
+    @include mixin.medium-font;
     @include mixin.glass-background;
 
     background-color: rgba(216, 216, 216, 0.397);
@@ -28,8 +28,9 @@
     }
   }
   .pain-image-wrap {
+    width: 50%;
     img {
-      width: 70%;
+      width: 90%;
       height: auto;
     }
   }

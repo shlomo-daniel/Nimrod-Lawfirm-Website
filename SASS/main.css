@@ -113,7 +113,7 @@ nav .contact-info {
   max-width: 500px;
   font-family: "Open-Sans";
   font-weight: 400;
-  font-size: calc(1.5rem + 2vw);
+  font-size: calc(2rem + 2vw);
   line-height: 1;
   letter-spacing: -2px;
   text-wrap: nowrap;
@@ -162,15 +162,16 @@ nav .contact-info {
   transform: rotate(-45deg) translateY(400%);
 }
 
-.pain-section {
-  flex-direction: column;
-}
 .pain-section .pain-card {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
   gap: 2rem;
   padding: 2rem;
+  font-family: "Open-Sans";
+  font-weight: 400;
+  font-size: 1.25rem;
   padding: 0.3rem;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -190,7 +191,10 @@ nav .contact-info {
 .pain-section .pain-card .pain-info ul li {
   list-style: none;
 }
+.pain-section .pain-image-wrap {
+  width: 50%;
+}
 .pain-section .pain-image-wrap img {
-  width: 70%;
+  width: 90%;
   height: auto;
 }/*# sourceMappingURL=main.css.map */
