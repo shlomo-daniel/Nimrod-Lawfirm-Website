@@ -9,7 +9,6 @@
     justify-content: space-evenly;
     gap: setup.$medium-spacing;
     padding: setup.$medium-spacing;
-    @include mixin.medium-font;
     @include mixin.glass-background;
 
     background-color: rgba(216, 216, 216, 0.397);
@@ -20,9 +19,14 @@
       gap: setup.$small-spacing;
 
       font-family: setup.$main-font;
+
+      h2 {
+        @include mixin.h2-settings;
+      }
       ul {
         li {
-          list-style: none;
+          line-height: 1.7;
+          text-align: right;
         }
       }
     }

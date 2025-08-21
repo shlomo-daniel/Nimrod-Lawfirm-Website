@@ -17,7 +17,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+li {
   direction: rtl;
 }
 // fonts imports
@@ -31,6 +32,11 @@ p {
 }
 
 $main-font: "Open-Sans", sans-serif;
+
+// // font sizes
+// $font-size-small: 1rem;
+// $font-size-medium: 2rem;
+// $font-size-large: 3rem;
 
 // spacing
 $small-spacing: 1rem;
