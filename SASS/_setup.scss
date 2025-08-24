@@ -10,6 +10,13 @@
   text-decoration: none;
   color: inherit;
 }
+// website width
+$max-width: 1400px;
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
 // text direction
 h1,
 h2,

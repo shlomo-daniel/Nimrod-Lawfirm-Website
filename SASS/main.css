@@ -11,6 +11,11 @@
   color: inherit;
 }
 
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -29,10 +34,6 @@ li {
   font-style: normal;
   font-display: swap;
 }
-body {
-  height: 10000px;
-}
-
 nav {
   position: fixed;
   z-index: 99;
@@ -40,7 +41,8 @@ nav {
   font-family: "Open-Sans", sans-serif;
   font-weight: bold;
   color: white;
-  margin: 15px;
+  margin: 15px auto;
+  max-width: clamp(300px, 95%, 1350px);
   padding: 0.3rem;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);

@@ -1,10 +1,6 @@
 @use "../setup";
 @use "../mixin";
 
-body {
-  height: 10000px;
-}
-
 nav {
   position: fixed;
   z-index: 99;
@@ -12,8 +8,8 @@ nav {
   font-family: setup.$main-font;
   font-weight: bold;
   color: white;
-  margin: 15px;
-
+  margin: 15px auto;
+  max-width: clamp(300px, 95%, 1350px);
   @include mixin.glass-background;
 
   .nav-container {
