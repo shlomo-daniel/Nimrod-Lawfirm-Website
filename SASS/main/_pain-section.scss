@@ -2,7 +2,6 @@
 @use "../mixin";
 
 .pain-section {
-  padding-top: setup.$medium-spacing;
   background-image: url(../../src/assets/backgrounds/virtical-background-svg.svg);
   // background: rgba(128, 128, 128, 0.445);
   .pain-card {
@@ -11,7 +10,7 @@
     align-items: center;
     justify-content: space-evenly;
     gap: setup.$medium-spacing;
-    padding: setup.$medium-spacing;
+    padding: setup.$page-padding;
 
     // background-color: rgba(216, 216, 216, 0.397);
 

@@ -1,0 +1,74 @@
+@use "../setup";
+@use "../mixin";
+.cure-section {
+  font-family: setup.$main-font;
+  color: white;
+  .cure-section-container {
+    padding: setup.$large-spacing 0;
+    background-image: url(../../src/assets/backgrounds/virtical-background-dark.svg);
+    text-align: center;
+    h2 {
+      @include mixin.h1-settings;
+    }
+    .cure-section-subheadings {
+      display: flex;
+      gap: setup.$medium-spacing;
+      justify-content: space-evenly;
+      align-items: center;
+
+      padding: setup.$medium-spacing 0;
+      p {
+        max-width: 20rch;
+      }
+    }
+
+    .cure-section-image {
+      width: 33%;
+      background-color: transparent;
+      justify-self: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .proofs-wrapper {
+      margin: setup.$medium-spacing 0;
+      padding: 0 setup.$page-padding;
+      display: flex;
+      gap: setup.$small-spacing;
+      .proof-image-wrap {
+        width: 33%;
+        img {
+          width: 100%;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(2) translateX(50%);
+          }
+        }
+      }
+    }
+    .reviews-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: setup.$large-spacing 0;
+      gap: setup.$small-spacing;
+      h2 {
+        @include mixin.h1-settings;
+      }
+      p {
+        max-width: 55ch;
+        @include mixin.h2-settings;
+      }
+    }
+    .cure-section-cta {
+      justify-self: center;
+      width: 50%;
+      button {
+        @include mixin.button-settings;
+        @include mixin.button-style;
+      }
+    }
+  }
+}

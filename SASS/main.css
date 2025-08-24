@@ -95,7 +95,7 @@ nav .contact-info {
   min-height: -moz-min-content;
   min-height: min-content;
   padding-top: 6rem;
-  padding-inline: 2rem;
+  padding-inline: 2.5rem;
   background-color: #313747;
   background: radial-gradient(circle, rgb(49, 55, 71) 0%, rgb(10, 0, 0) 100%);
 }
@@ -112,7 +112,7 @@ nav .contact-info {
   justify-content: center;
   align-content: center;
   max-width: 500px;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", sans-serif;
   font-weight: 400;
   font-size: calc(1rem * 1.7 * 1.7);
   line-height: 1;
@@ -128,7 +128,7 @@ nav .contact-info {
 .hero-section .hero-cta-wrap button {
   background: #cdaa56;
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", sans-serif;
   font-weight: 700;
   font-size: calc(1rem * 1.7);
   letter-spacing: 1px;
@@ -160,11 +160,10 @@ nav .contact-info {
 }
 .hero-section .hero-cta-wrap button:hover::before {
   opacity: 1;
-  transform: rotate(-45deg) translateY(400%);
+  transform: rotate(-45deg) translateY(500%);
 }
 
 .pain-section {
-  padding-top: 2rem;
   background-image: url(../../src/assets/backgrounds/virtical-background-svg.svg);
 }
 .pain-section .pain-card {
@@ -172,7 +171,7 @@ nav .contact-info {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 2.5rem;
   padding: 2rem;
 }
 .pain-section .pain-card .pain-info {
@@ -184,7 +183,7 @@ nav .contact-info {
   padding: 1rem;
 }
 .pain-section .pain-card .pain-info h2 {
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", sans-serif;
   font-weight: 700;
   font-size: calc(1rem * 1.7);
   letter-spacing: -1px;
@@ -200,7 +199,7 @@ nav .contact-info {
 .pain-section .pain-card .pain-info .pain-cta-warp button {
   background: #cdaa56;
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", sans-serif;
   font-weight: 700;
   font-size: calc(1rem * 1.7);
   letter-spacing: 1px;
@@ -232,6 +231,26 @@ nav .contact-info {
 }
 .pain-section .pain-card .pain-info .pain-cta-warp button:hover::before {
   opacity: 1;
+  transform: rotate(-45deg) translateY(500%);
+}
+.pain-section .pain-card .pain-info .pain-cta-warp button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, white);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.pain-section .pain-card .pain-info .pain-cta-warp button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #cdaa56;
+}
+.pain-section .pain-card .pain-info .pain-cta-warp button:hover::before {
+  opacity: 1;
   transform: rotate(-45deg) translateY(400%);
 }
 .pain-section .pain-card .pain-image-wrap {
@@ -240,4 +259,118 @@ nav .contact-info {
 .pain-section .pain-card .pain-image-wrap img {
   width: 100%;
   height: auto;
+}
+
+.cure-section {
+  font-family: "Open-Sans", sans-serif;
+  color: white;
+}
+.cure-section .cure-section-container {
+  padding: 4rem 0;
+  background-image: url(../../src/assets/backgrounds/virtical-background-dark.svg);
+  text-align: center;
+}
+.cure-section .cure-section-container h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: calc(1rem * 1.7 * 1.7);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+.cure-section .cure-section-container .cure-section-subheadings {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+.cure-section .cure-section-container .cure-section-subheadings p {
+  max-width: 20rch;
+}
+.cure-section .cure-section-container .cure-section-image {
+  width: 33%;
+  background-color: transparent;
+  justify-self: center;
+}
+.cure-section .cure-section-container .cure-section-image img {
+  max-width: 100%;
+  height: auto;
+}
+.cure-section .cure-section-container .proofs-wrapper {
+  margin: 2.5rem 0;
+  padding: 0 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.cure-section .cure-section-container .proofs-wrapper .proof-image-wrap {
+  width: 33%;
+}
+.cure-section .cure-section-container .proofs-wrapper .proof-image-wrap img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.cure-section .cure-section-container .proofs-wrapper .proof-image-wrap img:hover {
+  transform: scale(2) translateX(50%);
+}
+.cure-section .cure-section-container .reviews-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+  gap: 1rem;
+}
+.cure-section .cure-section-container .reviews-wrap h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: calc(1rem * 1.7 * 1.7);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+.cure-section .cure-section-container .reviews-wrap p {
+  max-width: 55ch;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem * 1.7);
+  letter-spacing: -1px;
+}
+.cure-section .cure-section-container .cure-section-cta {
+  justify-self: center;
+  width: 50%;
+}
+.cure-section .cure-section-container .cure-section-cta button {
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background: #cdaa56;
+  background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem * 1.7);
+  letter-spacing: 1px;
+  color: black;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cure-section .cure-section-container .cure-section-cta button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, white);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.cure-section .cure-section-container .cure-section-cta button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #cdaa56;
+}
+.cure-section .cure-section-container .cure-section-cta button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(500%);
 }/*# sourceMappingURL=main.css.map */
