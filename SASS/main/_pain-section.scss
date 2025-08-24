@@ -2,6 +2,9 @@
 @use "../mixin";
 
 .pain-section {
+  padding-top: setup.$medium-spacing;
+  background-image: url(../../src/assets/backgrounds/virtical-background-svg.svg);
+  // background: rgba(128, 128, 128, 0.445);
   .pain-card {
     display: flex;
     flex-direction: row;
@@ -9,17 +12,17 @@
     justify-content: space-evenly;
     gap: setup.$medium-spacing;
     padding: setup.$medium-spacing;
-    @include mixin.glass-background;
 
-    background-color: rgba(216, 216, 216, 0.397);
+    // background-color: rgba(216, 216, 216, 0.397);
 
     .pain-info {
       display: flex;
       flex-direction: column;
+      width: 55%;
       gap: setup.$small-spacing;
 
       font-family: setup.$main-font;
-
+      padding: setup.$small-spacing;
       h2 {
         @include mixin.h2-settings;
       }
@@ -29,13 +32,55 @@
           text-align: right;
         }
       }
+
+      .pain-cta-warp {
+        margin-top: setup.$small-spacing;
+        text-align: center;
+
+        button {
+          @include mixin.button-style;
+
+          position: relative;
+          width: 65%;
+
+          overflow: hidden;
+          transition: all 0.5s ease;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+              0deg,
+              transparent,
+              transparent 30%,
+              white
+            );
+            transform: rotate(-45deg);
+            transition: all 0.5s ease;
+            opacity: 0;
+          }
+
+          &:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 5px setup.$accent-color;
+          }
+          &:hover::before {
+            opacity: 1;
+            transform: rotate(-45deg) translateY(400%);
+          }
+        }
+      }
     }
-  }
-  .pain-image-wrap {
-    width: 50%;
-    img {
-      width: 90%;
-      height: auto;
+    .pain-image-wrap {
+      width: 50%;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

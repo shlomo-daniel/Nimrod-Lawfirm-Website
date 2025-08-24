@@ -114,7 +114,7 @@ nav .contact-info {
   max-width: 500px;
   font-family: "Open-Sans";
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: calc(1rem * 1.7 * 1.7);
   line-height: 1;
   letter-spacing: -2px;
   text-wrap: nowrap;
@@ -130,7 +130,7 @@ nav .contact-info {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans";
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: calc(1rem * 1.7);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -163,6 +163,10 @@ nav .contact-info {
   transform: rotate(-45deg) translateY(400%);
 }
 
+.pain-section {
+  padding-top: 2rem;
+  background-image: url(../../src/assets/backgrounds/virtical-background-svg.svg);
+}
 .pain-section .pain-card {
   display: flex;
   flex-direction: row;
@@ -170,36 +174,70 @@ nav .contact-info {
   justify-content: space-evenly;
   gap: 2rem;
   padding: 2rem;
-  padding: 0.3rem;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.0588235294);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
-  border: 1px solid rgba(255, 255, 255, 0.0784313725);
-  border-radius: 10px;
-  box-shadow: inset 0 1px 1px 1px rgba(255, 255, 255, 0.1607843137);
-  background-color: rgba(216, 216, 216, 0.397);
 }
 .pain-section .pain-card .pain-info {
   display: flex;
   flex-direction: column;
+  width: 55%;
   gap: 1rem;
   font-family: "Open-Sans", sans-serif;
+  padding: 1rem;
 }
 .pain-section .pain-card .pain-info h2 {
   font-family: "Open-Sans";
   font-weight: 700;
-  font-size: 2.9375rem;
+  font-size: calc(1rem * 1.7);
   letter-spacing: -1px;
 }
 .pain-section .pain-card .pain-info ul li {
   line-height: 1.7;
   text-align: right;
 }
-.pain-section .pain-image-wrap {
+.pain-section .pain-card .pain-info .pain-cta-warp {
+  margin-top: 1rem;
+  text-align: center;
+}
+.pain-section .pain-card .pain-info .pain-cta-warp button {
+  background: #cdaa56;
+  background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
+  font-family: "Open-Sans";
+  font-weight: 700;
+  font-size: calc(1rem * 1.7);
+  letter-spacing: 1px;
+  color: black;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  width: 65%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.pain-section .pain-card .pain-info .pain-cta-warp button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, white);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.pain-section .pain-card .pain-info .pain-cta-warp button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #cdaa56;
+}
+.pain-section .pain-card .pain-info .pain-cta-warp button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(400%);
+}
+.pain-section .pain-card .pain-image-wrap {
   width: 50%;
 }
-.pain-section .pain-image-wrap img {
-  width: 90%;
+.pain-section .pain-card .pain-image-wrap img {
+  width: 100%;
   height: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -21,7 +21,7 @@ p,
 li {
   direction: rtl;
 }
-// fonts imports
+// fonts style imports
 @font-face {
   font-family: "Open-Sans";
   src: url(../src/fonts/Open_Sans/OpenSans-VariableFont_wdthwght.ttf)
@@ -33,10 +33,16 @@ li {
 
 $main-font: "Open-Sans", sans-serif;
 
-// // font sizes
-// $font-size-small: 1rem;
-// $font-size-medium: 2rem;
-// $font-size-large: 3rem;
+// font sizes
+$base-font-size: 1rem;
+$ratio: 1.7;
+
+$font-size-normal: calc(1 * #{$base-font-size});
+$font-size-medium: calc(#{$base-font-size} * #{$ratio});
+$font-size-large: calc(#{$base-font-size} * #{$ratio} * #{$ratio});
+
+$font-size-small: calc(#{$base-font-size} / #{$ratio});
+$font-size-caption: calc(#{$base-font-size} / #{$ratio} / #{$ratio});
 
 // spacing
 $small-spacing: 1rem;
