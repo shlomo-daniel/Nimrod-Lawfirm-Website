@@ -12,17 +12,23 @@
   font-family: setup.$main-font;
   font-weight: 700;
   font-size: setup.$font-size-medium;
-  // line-height: 1;
+  line-height: 1.3;
   letter-spacing: -1px;
 }
-@mixin paragraph-font {
+@mixin paragraph-large {
+  font-family: setup.$main-font;
+  font-weight: 400;
+  font-size: setup.$font-size-medium;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+@mixin paragraph-normal {
   font-family: setup.$main-font;
   font-weight: 400;
   font-size: setup.$font-size-normal;
-  // line-height: 1;
-  // letter-spacing: -2px;
+  line-height: 1.5;
 }
-
+// effects
 @mixin glass-background {
   padding: 0.3rem;
   -webkit-backdrop-filter: blur(12px);
@@ -33,7 +39,7 @@
   border-radius: 10px;
   box-shadow: inset 0 1px 1px 1px #ffffff29;
 }
-
+// buttons styling
 @mixin button-settings {
   position: relative;
   width: 75%;

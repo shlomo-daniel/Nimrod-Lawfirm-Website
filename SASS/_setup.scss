@@ -16,6 +16,13 @@ main {
   max-width: $max-width;
   margin: 0 auto;
 }
+// website background
+body {
+  background: rgba(0, 0, 0, 0.87);
+}
+main {
+  background: white;
+}
 
 // text direction
 h1,

@@ -3,63 +3,90 @@
 .cure-section {
   font-family: setup.$main-font;
   color: white;
+
   .cure-section-container {
-    padding: setup.$large-spacing 0;
     background-image: url(../../src/assets/backgrounds/virtical-background-dark.svg);
     text-align: center;
+
     h2 {
-      @include mixin.h1-settings;
+      @include mixin.h2-settings;
     }
-    .cure-section-subheadings {
+    .cure-section-expertise {
       display: flex;
+      flex-direction: column;
       gap: setup.$medium-spacing;
       justify-content: space-evenly;
       align-items: center;
 
-      padding: setup.$medium-spacing 0;
+      padding: setup.$large-spacing 0;
+
       p {
-        max-width: 20rch;
+        max-width: 70rch;
+      }
+      .more-info-btn {
+        width: 50%;
+        button {
+          @include mixin.button-settings;
+          @include mixin.button-style;
+        }
       }
     }
 
     .cure-section-image {
-      width: 33%;
-      background-color: transparent;
+      width: 50%;
       justify-self: center;
-
+      @include mixin.glass-background;
       img {
         max-width: 100%;
         height: auto;
+        border-radius: 10px;
       }
     }
-    .proofs-wrapper {
-      margin: setup.$medium-spacing 0;
-      padding: 0 setup.$page-padding;
-      display: flex;
-      gap: setup.$small-spacing;
-      .proof-image-wrap {
-        width: 33%;
-        img {
-          width: 100%;
-          transition: all 0.3s ease;
-          &:hover {
-            transform: scale(2) translateX(50%);
+
+    .proofs-container {
+      padding: setup.$large-spacing setup.$page-padding;
+      backdrop-filter: brightness(0.5) blur(2px);
+      .proof-images-wrapper {
+        display: flex;
+        margin: setup.$medium-spacing 0;
+        gap: setup.$small-spacing;
+        .proof-image-wrap {
+          width: 33%;
+          img {
+            width: 100%;
+            transition: all 0.3s ease;
+            &:hover {
+              transform: scale(1.05);
+              cursor: pointer;
+            }
           }
         }
       }
     }
+
     .reviews-wrap {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: setup.$large-spacing 0;
+      padding: setup.$large-spacing 0;
       gap: setup.$small-spacing;
-      h2 {
-        @include mixin.h1-settings;
+
+      .stars {
+        span {
+          display: inline-block;
+          font-size: 2rem;
+          user-select: none;
+          transition: all 0.2s ease;
+          &:hover {
+            transform: scale(1.5);
+            color: setup.$accent-color;
+          }
+        }
       }
       p {
         max-width: 55ch;
-        @include mixin.h2-settings;
+        @include mixin.paragraph-large;
+        font-weight: 400;
       }
     }
     .cure-section-cta {
@@ -71,4 +98,15 @@
       }
     }
   }
+  .cure-section-cta {
+    padding-bottom: setup.$large-spacing;
+  }
+}
+
+// global to this section
+.accent-underline {
+  display: inline-block;
+  width: 7ch;
+  height: 1px;
+  background-color: setup.$accent-color;
 }
