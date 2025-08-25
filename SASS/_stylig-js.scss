@@ -1,11 +1,36 @@
-// .modal-toggle {
-//   filter: brightness(0.1);
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     inset: 0;
-//     width: 500px;
-//     height: 500px;
-//     background-color: red;
-//   }
-// }
+@use "./setup";
+
+dialog {
+  margin: auto;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+
+  &::backdrop {
+    background: rgba(5, 2, 2, 0.432);
+  }
+  .gallery-modal-content {
+    max-width: 600px;
+
+    .modal-x-button {
+      position: absolute;
+      top: -10px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+      border-radius: 25%;
+      font-size: 3rem;
+      color: rgb(255, 255, 255);
+      background: setup.$accent-color;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      &:hover {
+        color: rgba(2, 1, 1, 0.7);
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

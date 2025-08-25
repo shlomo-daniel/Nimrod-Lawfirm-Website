@@ -453,4 +453,37 @@ nav .contact-info {
   width: 7ch;
   height: 1px;
   background-color: #cdaa56;
+}
+
+dialog {
+  margin: auto;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+dialog::backdrop {
+  background: rgba(5, 2, 2, 0.432);
+}
+dialog .gallery-modal-content {
+  max-width: 600px;
+}
+dialog .gallery-modal-content .modal-x-button {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  background: #cdaa56;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+dialog .gallery-modal-content .modal-x-button:hover {
+  color: rgba(2, 1, 1, 0.7);
+}
+dialog .gallery-modal-content img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>עו"ד נמרוד</title>
     <link rel="stylesheet" href="./SASS/main.css">
-    <script src="./JS/enlarge.js" defer></script>
+    <script src="./JS/modal.js" defer></script>
 </head>
 
 <body>
@@ -104,18 +104,25 @@
                     </div>
                     <div class="proof-images-wrapper">
                         <div class="proof-image-wrap">
-                            <img src="./public/images/proof-images/proof (1).jpg" alt="הוכחה 1" class="proof-doc"
-                                onclick="toggle(this)">
+                            <img src="./public/images/proof-images/proof (1).jpg" alt="הוכחה 1" class="proof-doc">
 
                         </div>
                         <div class="proof-image-wrap">
-                            <img src="./public/images/proof-images/proof (1).jpg" alt="הוכחה 1" class="proof-doc">
+                            <img src="./public/images/proof-images/proof (2).jpg" alt="הוכחה 1" class="proof-doc">
                         </div>
                         <div class="proof-image-wrap">
                             <img class="proof-doc" src="./public/images/proof-images/proof (3).jpg" alt="הוכחה 3">
                         </div>
                     </div>
                 </div>
+                <!-- gallery-modal-->
+                <dialog id="modal">
+                    <div class="gallery-modal-content">
+                        <span id="modal-x" class="modal-x-button">&times;</span>
+                        <img id="modal-image" alt="Gallery Image document">
+                    </div>
+                </dialog>
+
 
                 <!-- reviews -->
                 <div class="reviews-wrap">
