@@ -173,7 +173,7 @@ nav .contact-info {
 }
 
 .pain-section {
-  background-image: url(../../src/assets/backgrounds/virtical-background-svg.svg);
+  background-image: url(../src/assets/backgrounds/virtical-background-svg.svg);
 }
 .pain-section .pain-card {
   display: flex;
@@ -276,7 +276,7 @@ nav .contact-info {
   color: white;
 }
 .cure-section .cure-section-container {
-  background-image: url(../../src/assets/backgrounds/virtical-background-dark.svg);
+  background-image: url(../src/assets/backgrounds/virtical-background-dark.svg);
   text-align: center;
 }
 .cure-section .cure-section-container h2 {
@@ -338,21 +338,30 @@ nav .contact-info {
   transform: rotate(-45deg) translateY(500%);
 }
 .cure-section .cure-section-container .cure-section-image {
-  width: 50%;
+  width: 25%;
   justify-self: center;
-  padding: 0.3rem;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.0588235294);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
-  border: 1px solid rgba(255, 255, 255, 0.0784313725);
-  border-radius: 10px;
-  box-shadow: inset 0 1px 1px 1px rgba(255, 255, 255, 0.1607843137);
 }
 .cure-section .cure-section-container .cure-section-image img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.cure-section .cure-section-container .services-container {
+  padding: 0 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+}
+.cure-section .cure-section-container .services-container .service-item {
+  width: 250px;
+  padding: 1rem;
+  min-height: 60px;
+  transition: all 0.3s ease;
+}
+.cure-section .cure-section-container .services-container .service-item:hover {
+  font-weight: bold;
+  cursor: pointer;
 }
 .cure-section .cure-section-container .proofs-container {
   padding: 4rem 2rem;

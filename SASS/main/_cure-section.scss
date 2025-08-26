@@ -5,7 +5,7 @@
   color: white;
 
   .cure-section-container {
-    background-image: url(../../src/assets/backgrounds/virtical-background-dark.svg);
+    background-image: url(../src/assets/backgrounds/virtical-background-dark.svg);
     text-align: center;
 
     h2 {
@@ -33,13 +33,32 @@
     }
 
     .cure-section-image {
-      width: 50%;
+      width: 25%;
       justify-self: center;
-      @include mixin.glass-background;
+      // @include mixin.glass-background;
       img {
         max-width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+    .services-container {
+      padding: 0 setup.$page-padding;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: setup.$small-spacing;
+      .service-item {
+        width: 250px;
+        padding: setup.$small-spacing;
+        min-height: 60px;
+
+        transition: all 0.3s ease;
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+        }
       }
     }
 
