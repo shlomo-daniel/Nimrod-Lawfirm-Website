@@ -16,6 +16,10 @@ main {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: rgba(0, 0, 0, 0.87);
 }
@@ -123,7 +127,7 @@ nav .contact-info {
   max-width: 500px;
   font-family: "Open-Sans", sans-serif;
   font-weight: 400;
-  font-size: calc(1rem * 1.7 * 1.7);
+  font-size: calc(1rem * 1.5 * 1.5 * 1.5);
   line-height: 1;
   letter-spacing: -2px;
   text-wrap: nowrap;
@@ -139,7 +143,7 @@ nav .contact-info {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.7);
+  font-size: calc(1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -194,7 +198,7 @@ nav .contact-info {
 .pain-section .pain-card .pain-info h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.7);
+  font-size: calc(1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -1px;
 }
@@ -211,7 +215,7 @@ nav .contact-info {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.7);
+  font-size: calc(1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -282,9 +286,16 @@ nav .contact-info {
 .cure-section .cure-section-container h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.7);
+  font-size: calc(1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -1px;
+}
+.cure-section .cure-section-container h3 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem * 1.5);
+  line-height: 1.3;
+  letter-spacing: -0.5px;
 }
 .cure-section .cure-section-container .cure-section-expertise {
   display: flex;
@@ -309,7 +320,7 @@ nav .contact-info {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.7);
+  font-size: calc(1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -347,21 +358,48 @@ nav .contact-info {
   border-radius: 10px;
 }
 .cure-section .cure-section-container .services-container {
-  padding: 0 2rem;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 1rem;
+  padding: 0.3rem;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.0588235294);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(255, 255, 255, 0.0784313725);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px 1px rgba(255, 255, 255, 0.1607843137);
+  background-image: url(../../public/images/services-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 95%;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 .cure-section .cure-section-container .services-container .service-item {
-  width: 250px;
-  padding: 1rem;
-  min-height: 60px;
+  position: relative;
+  width: 24.4%;
+  color: #cdaa56;
+  background-color: rgba(3, 1, 1, 0.815);
+  font-size: calc(1rem * 1.5);
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 .cure-section .cure-section-container .services-container .service-item:hover {
-  font-weight: bold;
+  background-color: rgba(205, 170, 86, 0.8);
+  color: white;
   cursor: pointer;
+}
+.cure-section .cure-section-container .services-container .service-item p {
+  position: absolute;
+  inset: 0;
+  align-self: center;
+  justify-self: center;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 20px;
+  text-underline-position: right;
 }
 .cure-section .cure-section-container .proofs-container {
   padding: 4rem 2rem;
@@ -407,9 +445,8 @@ nav .contact-info {
   max-width: 55ch;
   font-family: "Open-Sans", sans-serif;
   font-weight: 400;
-  font-size: calc(1rem * 1.7);
+  font-size: calc(1rem * 1.5);
   line-height: 1.3;
-  letter-spacing: -0.5px;
   font-weight: 400;
 }
 .cure-section .cure-section-container .cure-section-cta {
@@ -425,7 +462,7 @@ nav .contact-info {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.7);
+  font-size: calc(1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;

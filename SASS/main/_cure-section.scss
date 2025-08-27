@@ -1,5 +1,7 @@
 @use "../setup";
 @use "../mixin";
+@use "sass:color";
+
 .cure-section {
   font-family: setup.$main-font;
   color: white;
@@ -10,6 +12,9 @@
 
     h2 {
       @include mixin.h2-settings;
+    }
+    h3 {
+      @include mixin.h3-settings;
     }
     .cure-section-expertise {
       display: flex;
@@ -35,7 +40,6 @@
     .cure-section-image {
       width: 25%;
       justify-self: center;
-      // @include mixin.glass-background;
       img {
         max-width: 100%;
         height: auto;
@@ -44,20 +48,41 @@
     }
 
     .services-container {
-      padding: 0 setup.$page-padding;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-      gap: setup.$small-spacing;
-      .service-item {
-        width: 250px;
-        padding: setup.$small-spacing;
-        min-height: 60px;
+      @include mixin.glass-background;
+      background-image: url(../../public/images/services-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 
+      width: 95%;
+      min-height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: setup.$micro-spacing;
+
+      .service-item {
+        position: relative;
+        width: 24.4%;
+        color: setup.$accent-color;
+        background-color: rgba(3, 1, 1, 0.815);
+        font-size: setup.$font-size-medium;
+        border-radius: 10px;
         transition: all 0.3s ease;
         &:hover {
-          font-weight: bold;
+          background-color: color.change(setup.$accent-color, $alpha: 0.8);
+          color: white;
           cursor: pointer;
+        }
+        p {
+          position: absolute;
+          inset: 0;
+          align-self: center;
+          justify-self: center;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 20px;
+          text-underline-position: right;
         }
       }
     }

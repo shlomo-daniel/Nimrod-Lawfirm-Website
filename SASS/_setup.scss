@@ -16,6 +16,10 @@ main {
   max-width: $max-width;
   margin: 0 auto;
 }
+// scroll behavior
+html {
+  scroll-behavior: smooth;
+}
 // website background
 body {
   background: rgba(0, 0, 0, 0.87);
@@ -49,11 +53,12 @@ $main-font: "Open-Sans", sans-serif;
 
 // font sizes
 $base-font-size: 1rem;
-$ratio: 1.7;
+$ratio: 1.5;
 
 $font-size-normal: calc(1 * #{$base-font-size});
 $font-size-medium: calc(#{$base-font-size} * #{$ratio});
 $font-size-large: calc(#{$base-font-size} * #{$ratio} * #{$ratio});
+$font-size-huge: calc(#{$base-font-size} * #{$ratio} * #{$ratio} * #{$ratio});
 
 $font-size-small: calc(#{$base-font-size} / #{$ratio});
 $font-size-caption: calc(#{$base-font-size} / #{$ratio} / #{$ratio});
@@ -61,6 +66,7 @@ $font-size-caption: calc(#{$base-font-size} / #{$ratio} / #{$ratio});
 // spacing
 $page-padding: 2rem;
 
+$micro-spacing: 0.5rem;
 $small-spacing: 1rem;
 $medium-spacing: 2.5rem;
 $large-spacing: 4rem;
