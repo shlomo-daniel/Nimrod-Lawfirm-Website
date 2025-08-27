@@ -49,7 +49,7 @@
 
     .services-container {
       @include mixin.glass-background;
-      background-image: url(../../public/images/services-bg.jpg);
+      background-image: url(../public/images/services-bg.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
