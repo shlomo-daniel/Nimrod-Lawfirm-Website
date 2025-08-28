@@ -25,8 +25,22 @@
 
       padding: setup.$large-spacing 0;
 
-      p {
-        max-width: 70rch;
+      .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: setup.$medium-spacing;
+        padding: setup.$medium-spacing setup.$page-padding;
+
+        .about-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: setup.$small-spacing;
+          p {
+            max-width: 55rch;
+          }
+        }
       }
       .more-info-btn {
         width: 50%;
@@ -38,12 +52,11 @@
     }
 
     .cure-section-image {
-      width: 25%;
+      width: 20%;
       justify-self: center;
       img {
         max-width: 100%;
         height: auto;
-        border-radius: 10px;
       }
     }
 
