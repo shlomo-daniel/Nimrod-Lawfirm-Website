@@ -4,7 +4,7 @@
 @mixin h1-settings {
   font-family: setup.$main-font;
   font-weight: 400;
-  font-size: setup.$font-size-huge;
+  font-size: clamp(1rem, 3vw + 1rem, setup.$font-size-huge);
   line-height: 1;
   letter-spacing: -2px;
 }
@@ -65,7 +65,7 @@
 
   font-family: setup.$main-font;
   font-weight: 700;
-  font-size: setup.$font-size-medium;
+  font-size: clamp(0.5rem, 2vw + setup.$font-size-medium, 1.5rem);
   letter-spacing: 1px;
   color: black;
 
