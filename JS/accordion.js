@@ -55,28 +55,9 @@ class ModernAccordion {
       content.style.maxHeight = "0px";
     }
   }
-
-  // Public method to programmatically open/close items
-  openItem(index) {
-    if (this.items[index]) {
-      this.toggleItem(this.items[index], index);
-    }
-  }
-
-  closeAll() {
-    this.items.forEach((item) => {
-      item.classList.remove("active");
-      const content = item.querySelector(".accordion-content");
-      content.style.maxHeight = "0px";
-    });
-  }
 }
 
 // Initialize the accordion when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   const accordion = new ModernAccordion(".accordion");
-
-  // Example: You can control the accordion programmatically
-  // accordion.openItem(0); // Opens first item
-  // accordion.closeAll(); // Closes all items
 });
