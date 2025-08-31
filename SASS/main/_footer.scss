@@ -1,0 +1,37 @@
+@use "../setup";
+@use "../mixin";
+footer {
+  background: url("../src/assets/backgrounds/virtical-background-dark.svg");
+  font-family: setup.$main-font;
+  padding-top: setup.$medium-spacing;
+  color: white;
+  text-align: center;
+  .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    .footer-form {
+      display: flex;
+      flex-direction: column;
+      padding: setup.$small-spacing 0;
+    }
+    .footer-contact {
+      padding: setup.$small-spacing 0;
+    }
+    .footer-nav {
+      padding: setup.$small-spacing 0;
+      ul {
+        list-style-type: none;
+      }
+    }
+    .footer-disclaimers {
+      padding: setup.$small-spacing 0;
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
+  .footer-bottom {
+    padding: setup.$small-spacing 0;
+  }
+}

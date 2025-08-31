@@ -705,4 +705,40 @@ dialog .gallery-modal-content img {
 .faq-section .accordion-item.active {
   transform: translateX(0);
   box-shadow: inset -4px 0 0 #cdaa56;
+}
+
+footer {
+  background: url("../src/assets/backgrounds/virtical-background-dark.svg");
+  font-family: "Open-Sans", sans-serif;
+  padding-top: 2.5rem;
+  color: white;
+  text-align: center;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+footer .footer-container .footer-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+footer .footer-container .footer-contact {
+  padding: 1rem 0;
+}
+footer .footer-container .footer-nav {
+  padding: 1rem 0;
+}
+footer .footer-container .footer-nav ul {
+  list-style-type: none;
+}
+footer .footer-container .footer-disclaimers {
+  padding: 1rem 0;
+}
+footer .footer-container .footer-disclaimers ul {
+  list-style-type: none;
+}
+footer .footer-bottom {
+  padding: 1rem 0;
 }/*# sourceMappingURL=main.css.map */
