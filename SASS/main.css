@@ -710,22 +710,134 @@ dialog .gallery-modal-content img {
 footer {
   background: url("../src/assets/backgrounds/virtical-background-dark.svg");
   font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: calc(1 * 1rem);
+  line-height: 1.5;
   padding-top: 2.5rem;
   color: white;
+  text-align: right;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+footer .footer-form-subsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 2rem;
+  padding: 0.3rem;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.0588235294);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(255, 255, 255, 0.0784313725);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px 1px rgba(255, 255, 255, 0.1607843137);
+  padding: 2.5rem;
+}
+footer .footer-form-subsection h3 {
   text-align: center;
+  color: #cdaa56;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem * 1.5 * 1.5);
+  line-height: 1.3;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+footer .footer-form-subsection form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+footer .footer-form-subsection form input {
+  background: rgb(3, 2, 2);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  text-align: right;
+  padding: 1rem;
+  font-size: calc(1rem * 1.5);
+}
+footer .footer-form-subsection form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .footer-form-subsection form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .footer-form-subsection form button {
+  display: block;
+  background: #cdaa56;
+  background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+  letter-spacing: 1px;
+  color: black;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  width: 100%;
+  max-width: 630px;
+}
+footer .footer-form-subsection form button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, white);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+footer .footer-form-subsection form button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #cdaa56;
+}
+footer .footer-form-subsection form button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(500%);
+}
+footer h4 {
+  font-size: calc(1rem * 1.5);
+  color: #cdaa56;
+}
+footer a {
+  transition: all 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #cdaa56;
 }
 footer .footer-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-around;
 }
-footer .footer-container .footer-form {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
+footer .footer-container h4 {
+  margin-bottom: 1rem;
 }
 footer .footer-container .footer-contact {
   padding: 1rem 0;
+}
+footer .footer-container .footer-contact .footer-map {
+  margin-top: 1rem;
+}
+footer .footer-container .footer-contact .footer-map .map {
+  width: 300px;
+  height: 150px;
+  border: 0;
+  border-radius: 10px;
 }
 footer .footer-container .footer-nav {
   padding: 1rem 0;
@@ -740,5 +852,6 @@ footer .footer-container .footer-disclaimers ul {
   list-style-type: none;
 }
 footer .footer-bottom {
+  text-align: center;
   padding: 1rem 0;
 }/*# sourceMappingURL=main.css.map */

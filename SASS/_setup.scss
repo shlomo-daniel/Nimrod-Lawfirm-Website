@@ -11,9 +11,9 @@
   color: inherit;
 }
 // website width
-$max-width: 1400px;
+$website-max-width: 1400px;
 main {
-  max-width: $max-width;
+  max-width: $website-max-width;
   margin: 0 auto;
 }
 // scroll behavior

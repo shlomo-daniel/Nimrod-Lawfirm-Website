@@ -468,32 +468,29 @@
     </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <!-- logo with the form -->
+        <!-- contact form subsection-->
+        <div class="footer-form-subsection">
+            <h3>כל רגע יכול להכריע צור קשר</h3>
+            <form action="submit_form.php" method="post">
+                <input type="text" id="full-name" name="full-name" placeholder="שם מלא" required>
+                <input type="phone" id="phone" name="phone" placeholder="טלפון" required>
+                <input type="email" id="email" name="email" placeholder="מייל" required>
+                <button type="submit">צרו קשר</button>
 
-            <div class="footer-form">
-                <form action="submit_form.php" method="post">
-                    <h4>צור קשר</h4>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <button type="submit">צרו קשר</button>
-                </form>
-                <div class="footer-logo">
-                    <img src="path/to/logo.png" alt="Logo">
-                </div>
-            </div>
+            </form>
+        </div>
+        <div class="footer-container">
             <!-- contact and map details (all clickable) -->
             <div class="footer-contact">
                 <h4>עו"ד משרד נמרוד גארי</h4>
-                <p>דוא"ל: info@example.com</p>
-                <p>טלפון: (123) 456-7890</p>
+                <p> כתובת: הכרם 77 ,שוהם</p>
+                <p><a href="mailto:info@example.com">דוא"ל: info@example.com</a></p>
+                <p><a href="tel:+1234567890">טלפון: (123) 456-7890</a></p>
                 <div class="footer-map">
-                    <h4>המיקום שלנו</h4>
-                    <div id="map"></div>
+                    <div class="map"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13534.73491078763!2d34.949853499999996!3d31.9965881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d349c3e3c6fdb%3A0x3cf9af95acb7a53a!2z16nXldeU150!5e0!3m2!1siw!2sil!4v1756690411819!5m2!1siw!2sil"
+                            width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
             <!-- navigation (sitemap) -->

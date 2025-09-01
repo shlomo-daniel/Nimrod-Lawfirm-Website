@@ -2,21 +2,84 @@
 @use "../mixin";
 footer {
   background: url("../src/assets/backgrounds/virtical-background-dark.svg");
-  font-family: setup.$main-font;
+  @include mixin.paragraph-normal;
   padding-top: setup.$medium-spacing;
   color: white;
-  text-align: center;
+  text-align: right;
+  max-width: setup.$website-max-width;
+  margin: 0 auto;
+  .footer-form-subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: setup.$page-padding;
+    @include mixin.glass-background;
+    padding: setup.$medium-spacing;
+    h3 {
+      text-align: center;
+      color: setup.$accent-color;
+      @include mixin.h2-settings;
+      margin-bottom: setup.$small-spacing;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+      gap: setup.$small-spacing;
+      input {
+        background: rgb(3, 2, 2);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        outline: none;
+        color: white;
+        text-align: right;
+        padding: setup.$small-spacing;
+        font-size: setup.$font-size-medium;
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+      button {
+        display: block;
+        @include mixin.button-style;
+        @include mixin.button-settings;
+        width: 100%;
+        max-width: 630px;
+      }
+    }
+  }
+  h4 {
+    font-size: setup.$font-size-medium;
+    color: setup.$accent-color;
+  }
+  a {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: setup.$accent-color;
+    }
+  }
   .footer-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-around;
-    .footer-form {
-      display: flex;
-      flex-direction: column;
-      padding: setup.$small-spacing 0;
+    h4 {
+      margin-bottom: setup.$small-spacing;
     }
+
     .footer-contact {
       padding: setup.$small-spacing 0;
+      .footer-map {
+        margin-top: setup.$small-spacing;
+        .map {
+          width: 300px;
+          height: 150px;
+          border: 0;
+          border-radius: 10px;
+        }
+      }
     }
     .footer-nav {
       padding: setup.$small-spacing 0;
@@ -32,6 +95,7 @@ footer {
     }
   }
   .footer-bottom {
+    text-align: center;
     padding: setup.$small-spacing 0;
   }
 }
