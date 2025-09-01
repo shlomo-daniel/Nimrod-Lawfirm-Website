@@ -82,6 +82,17 @@
         font-size: setup.$font-size-medium;
         border-radius: 10px;
         transition: all 0.3s ease;
+
+        // responsive
+        @media (max-width: 768px) {
+          &.service-item {
+            width: 95%;
+            p {
+              text-underline-offset: 10px;
+            }
+          }
+        }
+
         &:hover {
           background-color: color.change(setup.$accent-color, $alpha: 0.8);
           color: white;
@@ -167,3 +178,5 @@
   height: 1px;
   background-color: setup.$accent-color;
 }
+
+// responsive

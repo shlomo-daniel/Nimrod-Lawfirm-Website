@@ -429,6 +429,14 @@ nav .contact-info {
   border-radius: 10px;
   transition: all 0.3s ease;
 }
+@media (max-width: 768px) {
+  .cure-section .cure-section-container .services-container .service-item.service-item {
+    width: 95%;
+  }
+  .cure-section .cure-section-container .services-container .service-item.service-item p {
+    text-underline-offset: 10px;
+  }
+}
 .cure-section .cure-section-container .services-container .service-item:hover {
   background-color: rgba(205, 170, 86, 0.8);
   color: white;
