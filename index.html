@@ -7,6 +7,7 @@
     <title>עו"ד נמרוד</title>
     <link rel="shortcut icon" href="./public/images/nimrod-lawfirm-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./SASS/main.css">
+    <script src="./JS/responsive_nav.js" defer></script>
     <script src="./JS/modal.js" defer></script>
     <script src="./JS/accordion.js" defer></script>
 </head>
@@ -15,17 +16,17 @@
     <!-- navigation -->
     <nav>
         <div class="nav-container">
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#services">שירותים</a></li>
                 <li><a href="#services">עבירות</a></li>
                 <li><a href="#about">אודות</a></li>
             </ul>
             <div class="logo-wrap">
-                <a href="./index.html">
+                <a href="./index.html" id="nav-logo">
                     <img src="./public/images/nimrod-lawfirm-logo.png" alt="לוגו משרד העורך דין נמרוד גארי">
                 </a>
             </div>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#contact">צור קשר</a></li>
                 <li><a href="#blog">בלוג</a></li>
                 <li><a href="#faq">שאלות נפוצות</a></li>
@@ -470,7 +471,7 @@
     <footer>
         <!-- contact form subsection-->
         <div class="footer-form-subsection">
-            <h3>כל רגע יכול להכריע צור קשר</h3>
+            <h3>להגנה ושמירה על זכויותיך</h3>
             <form action="submit_form.php" method="post">
                 <input type="text" id="full-name" name="full-name" placeholder="שם מלא" required>
                 <input type="phone" id="phone" name="phone" placeholder="טלפון" required>
@@ -515,8 +516,8 @@
         </div>
         <!-- credits -->
         <div class="footer-bottom">
-            <p>&copy; 2025 Nimrod Lawfirm. All rights reserved.</p>
-            <p>&copy; 2025 Gindi Web Solutions. All rights reserved.</p>
+            <p>&copy; 2025 Nimrod Lawfirm. All rights reserved</p>
+            <p>&copy; developed by Gindi Web Solutions 2025</p>
         </div>
     </footer>
 </body>

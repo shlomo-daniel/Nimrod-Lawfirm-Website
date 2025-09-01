@@ -36,9 +36,12 @@ footer {
         color: white;
         text-align: right;
         padding: setup.$small-spacing;
-        font-size: setup.$font-size-medium;
+        font-size: setup.$font-size-normal;
         &::placeholder {
           color: rgba(255, 255, 255, 0.5);
+        }
+        &:focus {
+          border: 1px solid setup.$accent-color;
         }
       }
       button {
@@ -95,6 +98,7 @@ footer {
     }
   }
   .footer-bottom {
+    font-size: setup.$font-size-small;
     text-align: center;
     padding: setup.$small-spacing 0;
   }

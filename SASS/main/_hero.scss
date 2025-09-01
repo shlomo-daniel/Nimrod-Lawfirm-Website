@@ -4,6 +4,7 @@
 .hero-section {
   display: flex;
   flex-wrap: wrap;
+  gap: setup.$small-spacing;
   justify-content: space-evenly;
   min-height: min-content;
   padding-top: 6rem;

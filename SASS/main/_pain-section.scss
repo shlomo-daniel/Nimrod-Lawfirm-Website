@@ -3,21 +3,20 @@
 
 .pain-section {
   background-image: url(../src/assets/backgrounds/virtical-background-svg.svg);
-  // background: rgba(128, 128, 128, 0.445);
   .pain-card {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     gap: setup.$medium-spacing;
     padding: setup.$page-padding;
 
-    // background-color: rgba(216, 216, 216, 0.397);
-
     .pain-info {
       display: flex;
       flex-direction: column;
-      width: 55%;
+      width: 100%;
+      max-width: 500px;
       gap: setup.$small-spacing;
 
       font-family: setup.$main-font;
@@ -40,7 +39,8 @@
           @include mixin.button-style;
 
           position: relative;
-          width: 65%;
+          width: 100%;
+          max-width: 300px;
 
           overflow: hidden;
           transition: all 0.5s ease;
@@ -75,7 +75,8 @@
       }
     }
     .pain-image-wrap {
-      width: 50%;
+      width: 100%;
+      max-width: 500px;
       img {
         width: 100%;
         height: auto;
