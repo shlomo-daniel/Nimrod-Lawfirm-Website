@@ -48,7 +48,6 @@
       display: block;
       position: fixed;
       bottom: 10px;
-
       @keyframes fadeIn {
         0% {
           opacity: 0;
@@ -58,10 +57,12 @@
         }
       }
       button {
+        opacity: 0;
         @include mixin.button-style;
         @include mixin.button-settings;
         width: 95vw;
         animation: fadeIn 0.8s forwards;
+        animation-delay: 1s;
       }
     }
   }

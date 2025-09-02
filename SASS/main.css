@@ -219,6 +219,7 @@ nav .contact-info {
     }
   }
   .hero-section .hero-cta-wrap-mobile button {
+    opacity: 0;
     background: #cdaa56;
     background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
     font-family: "Open-Sans", sans-serif;
@@ -237,6 +238,7 @@ nav .contact-info {
     transition: all 0.5s ease;
     width: 95vw;
     animation: fadeIn 0.8s forwards;
+    animation-delay: 1s;
   }
   .hero-section .hero-cta-wrap-mobile button::before {
     content: "";
