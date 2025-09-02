@@ -42,32 +42,42 @@
       @include mixin.button-settings;
     }
   }
-  .hero-cta-wrap-mobile {
-    display: none;
-    @media screen and (max-width: 768px) {
-      display: block;
-      position: fixed;
-      bottom: 10px;
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      button {
-        @include mixin.button-style;
-        @include mixin.button-settings;
-        width: 95vw;
-
+}
+// responsive styles for mobile
+.hero-cta-wrap-mobile {
+  display: none;
+  @media screen and (max-width: 1030px) {
+    .hero-cta-wrap {
+      display: none;
+    }
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    @keyframes fadeIn {
+      0% {
         opacity: 0;
-        animation-delay: 1.5s;
-        animation: fadeIn 0.9s forwards;
-        &.hidden {
-          display: none;
-        }
+      }
+      100% {
+        opacity: 1;
       }
     }
+    button {
+      @include mixin.button-style;
+      @include mixin.button-settings;
+      width: 95vw;
+
+      opacity: 0;
+      animation-delay: 1.5s;
+      animation: fadeIn 0.9s forwards;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .hero-cta-wrap {
+    display: none;
   }
 }

@@ -201,14 +201,18 @@ nav .contact-info {
   opacity: 1;
   transform: rotate(-45deg) translateY(500%);
 }
-.hero-section .hero-cta-wrap-mobile {
+
+.hero-cta-wrap-mobile {
   display: none;
 }
-@media screen and (max-width: 768px) {
-  .hero-section .hero-cta-wrap-mobile {
+@media screen and (max-width: 1030px) {
+  .hero-cta-wrap-mobile {
     display: block;
     position: fixed;
     bottom: 10px;
+  }
+  .hero-cta-wrap-mobile .hero-cta-wrap {
+    display: none;
   }
   @keyframes fadeIn {
     0% {
@@ -218,7 +222,7 @@ nav .contact-info {
       opacity: 1;
     }
   }
-  .hero-section .hero-cta-wrap-mobile button {
+  .hero-cta-wrap-mobile button {
     background: #cdaa56;
     background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
     font-family: "Open-Sans", sans-serif;
@@ -240,7 +244,7 @@ nav .contact-info {
     animation-delay: 1.5s;
     animation: fadeIn 0.9s forwards;
   }
-  .hero-section .hero-cta-wrap-mobile button::before {
+  .hero-cta-wrap-mobile button::before {
     content: "";
     position: absolute;
     top: -100%;
@@ -252,19 +256,24 @@ nav .contact-info {
     transition: all 0.5s ease;
     opacity: 0;
   }
-  .hero-section .hero-cta-wrap-mobile button:hover {
+  .hero-cta-wrap-mobile button:hover {
     transform: scale(1.03);
     box-shadow: 0 0 5px #cdaa56;
   }
-  .hero-section .hero-cta-wrap-mobile button:hover::before {
+  .hero-cta-wrap-mobile button:hover::before {
     opacity: 1;
     transform: rotate(-45deg) translateY(500%);
   }
-  .hero-section .hero-cta-wrap-mobile button.hidden {
+  .hero-cta-wrap-mobile button.hidden {
     display: none;
   }
 }
 
+@media screen and (max-width: 1030px) {
+  .hero-cta-wrap {
+    display: none;
+  }
+}
 .pain-section {
   background-image: url(../src/assets/backgrounds/virtical-background-svg.svg);
 }
