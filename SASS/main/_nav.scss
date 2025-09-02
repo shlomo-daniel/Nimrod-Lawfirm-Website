@@ -71,10 +71,17 @@ nav {
       max-height: 60px;
       overflow: hidden;
       &.mobile-mode {
-        // max-height: 50px;
-
         max-height: 500px;
       }
+      // .logo-wrap {
+      //   a {
+      //     &::after {
+      //       content: "❮";
+      //       font-size: 1rem;
+      //       transform: translate(-50%);
+      //     }
+      //   }
+      // }
     }
 
     ul {
