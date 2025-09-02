@@ -57,12 +57,16 @@
         }
       }
       button {
-        opacity: 0;
         @include mixin.button-style;
         @include mixin.button-settings;
         width: 95vw;
-        animation: fadeIn 0.8s forwards;
-        animation-delay: 1s;
+
+        opacity: 0;
+        animation-delay: 1.5s;
+        animation: fadeIn 0.9s forwards;
+        &.hidden {
+          display: none;
+        }
       }
     }
   }

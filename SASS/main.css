@@ -219,7 +219,6 @@ nav .contact-info {
     }
   }
   .hero-section .hero-cta-wrap-mobile button {
-    opacity: 0;
     background: #cdaa56;
     background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
     font-family: "Open-Sans", sans-serif;
@@ -237,8 +236,9 @@ nav .contact-info {
     overflow: hidden;
     transition: all 0.5s ease;
     width: 95vw;
-    animation: fadeIn 0.8s forwards;
-    animation-delay: 1s;
+    opacity: 0;
+    animation-delay: 1.5s;
+    animation: fadeIn 0.9s forwards;
   }
   .hero-section .hero-cta-wrap-mobile button::before {
     content: "";
@@ -259,6 +259,9 @@ nav .contact-info {
   .hero-section .hero-cta-wrap-mobile button:hover::before {
     opacity: 1;
     transform: rotate(-45deg) translateY(500%);
+  }
+  .hero-section .hero-cta-wrap-mobile button.hidden {
+    display: none;
   }
 }
 
