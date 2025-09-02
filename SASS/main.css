@@ -210,6 +210,14 @@ nav .contact-info {
     position: fixed;
     bottom: 10px;
   }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .hero-section .hero-cta-wrap-mobile button {
     background: #cdaa56;
     background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
@@ -228,6 +236,7 @@ nav .contact-info {
     overflow: hidden;
     transition: all 0.5s ease;
     width: 95vw;
+    animation: fadeIn 0.8s forwards;
   }
   .hero-section .hero-cta-wrap-mobile button::before {
     content: "";

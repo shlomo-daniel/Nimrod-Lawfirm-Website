@@ -48,10 +48,20 @@
       display: block;
       position: fixed;
       bottom: 10px;
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
       button {
         @include mixin.button-style;
         @include mixin.button-settings;
         width: 95vw;
+        animation: fadeIn 0.8s forwards;
       }
     }
   }
