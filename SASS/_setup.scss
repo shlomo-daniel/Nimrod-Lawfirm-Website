@@ -63,6 +63,8 @@ $font-size-huge: calc(#{$base-font-size} * #{$ratio} * #{$ratio} * #{$ratio});
 $font-size-small: calc(#{$base-font-size} / #{$ratio});
 $font-size-caption: calc(#{$base-font-size} / #{$ratio} / #{$ratio});
 
+// $font-size-mobile: calc(#{$base-font-size} * 1.5);
+
 // spacing
 $page-padding: 2rem;
 

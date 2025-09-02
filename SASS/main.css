@@ -208,7 +208,7 @@ nav .contact-info {
   .hero-section .hero-cta-wrap-mobile {
     display: block;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
   }
   .hero-section .hero-cta-wrap-mobile button {
     background: #cdaa56;
@@ -227,7 +227,7 @@ nav .contact-info {
     max-width: 350px;
     overflow: hidden;
     transition: all 0.5s ease;
-    width: 500px;
+    width: 95vw;
   }
   .hero-section .hero-cta-wrap-mobile button::before {
     content: "";

@@ -47,11 +47,11 @@
     @media screen and (max-width: 768px) {
       display: block;
       position: fixed;
-      bottom: 0;
+      bottom: 10px;
       button {
         @include mixin.button-style;
         @include mixin.button-settings;
-        width: 500px;
+        width: 95vw;
       }
     }
   }
