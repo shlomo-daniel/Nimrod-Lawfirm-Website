@@ -28,7 +28,6 @@
     justify-content: center;
     align-content: center;
     max-width: 500px;
-
     @include mixin.h1-settings;
     text-wrap: nowrap;
     color: white;
@@ -41,6 +40,19 @@
     button {
       @include mixin.button-style;
       @include mixin.button-settings;
+    }
+  }
+  .hero-cta-wrap-mobile {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      button {
+        @include mixin.button-style;
+        @include mixin.button-settings;
+        width: 500px;
+      }
     }
   }
 }

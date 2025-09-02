@@ -201,6 +201,55 @@ nav .contact-info {
   opacity: 1;
   transform: rotate(-45deg) translateY(500%);
 }
+.hero-section .hero-cta-wrap-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .hero-cta-wrap-mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+  }
+  .hero-section .hero-cta-wrap-mobile button {
+    background: #cdaa56;
+    background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    width: 500px;
+  }
+  .hero-section .hero-cta-wrap-mobile button::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(0deg, transparent, transparent 30%, white);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  .hero-section .hero-cta-wrap-mobile button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px #cdaa56;
+  }
+  .hero-section .hero-cta-wrap-mobile button:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(500%);
+  }
+}
 
 .pain-section {
   background-image: url(../src/assets/backgrounds/virtical-background-svg.svg);
