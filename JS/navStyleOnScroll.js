@@ -15,4 +15,3 @@ window.addEventListener("scroll", () => {
     requestAnimationFrame(updateNavBg);
   }
 });
-console.log(nav);
