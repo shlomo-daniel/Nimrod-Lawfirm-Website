@@ -50,9 +50,12 @@
     .hero-cta-wrap {
       display: none;
     }
+
     display: block;
     position: fixed;
+    z-index: 10;
     bottom: 10px;
+
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -61,14 +64,15 @@
         opacity: 1;
       }
     }
+
     button {
       @include mixin.button-style;
       @include mixin.button-settings;
       width: 95vw;
-
       opacity: 0;
       animation-delay: 1.5s;
       animation: fadeIn 0.9s forwards;
+
       &.hidden {
         display: none;
       }

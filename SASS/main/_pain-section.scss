@@ -3,6 +3,8 @@
 
 .pain-section {
   background-image: url(../src/assets/backgrounds/virtical-background-svg.svg);
+  position: relative;
+
   .pain-card {
     display: flex;
     flex-wrap: wrap;
@@ -83,5 +85,34 @@
         border-radius: 10px;
       }
     }
+  }
+  .nav-arrows {
+    .arrow {
+      position: absolute;
+      background: white;
+      background: transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        fill: setup.$accent-color;
+      }
+      &.left-arrow {
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+      }
+      &.right-arrow {
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .hidden-pain-card {
+    display: none;
   }
 }

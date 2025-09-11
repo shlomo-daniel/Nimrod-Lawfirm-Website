@@ -257,6 +257,7 @@ nav.nav-scrolled {
   .hero-cta-wrap-mobile {
     display: block;
     position: fixed;
+    z-index: 10;
     bottom: 10px;
   }
   .hero-cta-wrap-mobile .hero-cta-wrap {
@@ -324,6 +325,7 @@ nav.nav-scrolled {
 }
 .pain-section {
   background-image: url(../src/assets/backgrounds/virtical-background-svg.svg);
+  position: relative;
 }
 .pain-section .pain-card {
   display: flex;
@@ -424,6 +426,32 @@ nav.nav-scrolled {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.pain-section .nav-arrows .arrow {
+  position: absolute;
+  background: white;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.pain-section .nav-arrows .arrow:hover {
+  transform: scale(1.1);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  fill: #cdaa56;
+}
+.pain-section .nav-arrows .arrow.left-arrow {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.pain-section .nav-arrows .arrow.right-arrow {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.pain-section .hidden-pain-card {
+  display: none;
 }
 
 .cure-section {
