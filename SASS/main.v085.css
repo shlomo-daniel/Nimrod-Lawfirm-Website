@@ -55,6 +55,7 @@ nav {
   color: white;
   margin: 15px auto;
   max-width: clamp(300px, 95%, 1350px);
+  transition: all 0.5s ease;
   padding: 0.3rem;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -63,6 +64,30 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.0784313725);
   border-radius: 10px;
   box-shadow: inset 0 1px 1px 1px rgba(255, 255, 255, 0.1607843137);
+}
+nav .nav-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  cursor: pointer;
+}
+nav .nav-contact svg {
+  stroke: white;
+  width: 30px;
+  height: 30px;
+}
+nav .nav-contact svg:hover {
+  stroke: #cdaa56;
+}
+nav .nav-contact span {
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+nav .nav-contact span:hover {
+  color: #cdaa56;
 }
 nav .nav-container {
   display: flex;
@@ -99,14 +124,17 @@ nav ul li a:hover {
   color: #cdaa56;
   text-shadow: 0px 0px 1px rgb(255, 255, 255);
 }
-nav .contact-info {
-  align-content: center;
+nav .menu-icon {
+  display: none;
+}
+nav.nav-scrolled {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   nav .nav-container {
     flex-direction: column;
@@ -117,12 +145,32 @@ nav .contact-info {
   nav .nav-container.mobile-mode {
     max-height: 500px;
   }
-  nav ul {
+  nav .nav-container ul {
     flex-direction: column;
     align-items: center;
   }
-  nav ul li {
+  nav .nav-container ul li {
     margin: 0.5rem 0;
+  }
+  nav .menu-icon {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  nav .menu-icon svg {
+    transition: all 0.3s ease;
+    stroke: white;
+  }
+  nav .menu-icon svg:hover {
+    stroke: #cdaa56;
+  }
+  nav .menu-icon svg.active {
+    transform: rotate(90deg);
+    stroke: #cdaa56;
   }
 }
 .hero-section {
@@ -375,6 +423,7 @@ nav .contact-info {
 .pain-section .pain-card .pain-image-wrap img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .cure-section {
@@ -481,7 +530,7 @@ nav .contact-info {
   border: 1px solid rgba(255, 255, 255, 0.0784313725);
   border-radius: 10px;
   box-shadow: inset 0 1px 1px 1px rgba(255, 255, 255, 0.1607843137);
-  background-image: url(../public/images/services-bg.jpg);
+  background-image: url(../public/images/services-bg-2-mod.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

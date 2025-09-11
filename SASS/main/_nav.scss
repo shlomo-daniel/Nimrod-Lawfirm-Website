@@ -10,7 +10,34 @@ nav {
   color: white;
   margin: 15px auto;
   max-width: clamp(300px, 95%, 1350px);
+  transition: all 0.5s ease;
   @include mixin.glass-background;
+
+  .nav-contact {
+    display: flex;
+    align-items: center;
+    gap: setup.$small-spacing;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    cursor: pointer;
+
+    svg {
+      stroke: white;
+      width: 30px;
+      height: 30px;
+      &:hover {
+        stroke: setup.$accent-color;
+      }
+    }
+    span {
+      font-weight: 400;
+      transition: all 0.3s ease;
+      &:hover {
+        color: setup.$accent-color;
+      }
+    }
+  }
 
   .nav-container {
     display: flex;
@@ -54,17 +81,22 @@ nav {
       }
     }
   }
-  .contact-info {
-    align-content: center;
+
+  .menu-icon {
+    display: none;
+  }
+
+  &.nav-scrolled {
+    background: rgba(0, 0, 0, 0.8);
   }
 }
 
 // responsive
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
-
+    display: flex;
+    justify-content: center;
+    // align-items: center;
     .nav-container {
       flex-direction: column;
       align-items: center;
@@ -73,23 +105,33 @@ nav {
       &.mobile-mode {
         max-height: 500px;
       }
-      // .logo-wrap {
-      //   a {
-      //     &::after {
-      //       content: "❮";
-      //       font-size: 1rem;
-      //       transform: translate(-50%);
-      //     }
-      //   }
-      // }
+      ul {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          margin: 0.5rem 0;
+        }
+      }
     }
-
-    ul {
-      flex-direction: column;
-      align-items: center;
-
-      li {
-        margin: 0.5rem 0;
+    .menu-icon {
+      display: block;
+      position: absolute;
+      text-align: center;
+      top: 18px;
+      right: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      svg {
+        transition: all 0.3s ease;
+        stroke: white;
+        &:hover {
+          stroke: setup.$accent-color;
+        }
+        &.active {
+          transform: rotate(90deg);
+          stroke: setup.$accent-color;
+        }
       }
     }
   }
