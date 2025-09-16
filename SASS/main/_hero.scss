@@ -43,10 +43,11 @@
     }
   }
 }
+
 // responsive styles for mobile
 .hero-cta-wrap-mobile {
   display: none;
-  @media screen and (max-width: 1030px) {
+  @media screen and (max-width: setup.$breakpoint-desktop) {
     .hero-cta-wrap {
       display: none;
     }
@@ -80,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: setup.$breakpoint-desktop) {
   .hero-cta-wrap {
     display: none;
   }

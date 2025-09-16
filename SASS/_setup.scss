@@ -80,15 +80,7 @@ $accent-color: #cdaa56;
 
 // Layout & Grid
 
-// Grid system: 12-column or flexbox/CSS Grid
 // Breakpoints:
-// Container max-width:
-// Content width: 65-75 characters per line for readability
-
-// Component Standards
-
-// Border radius: 4-8px for consistency
-// Button heights: 40-48px minimum for touch targets
-// Input field heights: Match button heights
-// Icon sizes: 16px, 20px, 24px standard sizes
-// Shadows: Subtle elevation system (2-4 levels)
+$breakpoint-mobile: 325px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1065px;

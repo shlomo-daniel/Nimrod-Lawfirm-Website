@@ -4,9 +4,11 @@
 .pain-section {
   background-image: url(../src/assets/backgrounds/virtical-background-svg.svg);
   position: relative;
-
+  min-height: 450px;
+  overflow: hidden;
   .pain-card {
-    display: flex;
+    // display: flex;
+    display: none;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -82,7 +84,9 @@
       img {
         width: 100%;
         height: auto;
+        object-fit: cover;
         border-radius: 10px;
+        animation: slideshow-fade-in 0.3s ease;
       }
     }
   }
@@ -97,22 +101,47 @@
       &:hover {
         transform: scale(1.1);
         border-radius: 50%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        fill: setup.$accent-color;
+
+        color: setup.$accent-color;
       }
       &.left-arrow {
         top: 50%;
         left: 10px;
         transform: translateY(-50%);
+        font-size: 50px;
       }
       &.right-arrow {
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
+        font-size: 50px;
       }
     }
   }
-  .hidden-pain-card {
-    display: none;
+  @keyframes slideshow-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  //  utility class to show active pain card
+  .active-pain-card {
+    display: flex;
+  }
+}
+
+@media (max-width: setup.$breakpoint-desktop) {
+  .pain-section {
+    min-height: 830px;
+    @media (max-width: setup.$breakpoint-mobile) {
+      min-height: 860px;
+    }
+    display: flex;
+    align-items: center;
+    .pain-card {
+      gap: 0;
+    }
   }
 }

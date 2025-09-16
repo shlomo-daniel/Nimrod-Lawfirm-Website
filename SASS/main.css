@@ -74,19 +74,25 @@ nav .nav-contact {
   left: 20px;
   cursor: pointer;
 }
-nav .nav-contact svg {
+nav .nav-contact a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+nav .nav-contact a svg {
   stroke: white;
   width: 30px;
   height: 30px;
 }
-nav .nav-contact svg:hover {
+nav .nav-contact a svg:hover {
   stroke: #cdaa56;
 }
-nav .nav-contact span {
-  font-weight: 400;
+nav .nav-contact a span {
+  font-weight: 600;
   transition: all 0.3s ease;
 }
-nav .nav-contact span:hover {
+nav .nav-contact a span:hover {
   color: #cdaa56;
 }
 nav .nav-container {
@@ -173,6 +179,16 @@ nav.nav-scrolled {
     stroke: #cdaa56;
   }
 }
+@media (max-width: 1065px) {
+  nav .nav-contact span {
+    display: none;
+  }
+}
+@media (max-width: 1065px) and (max-width: 768px) {
+  nav .nav-contact span {
+    display: inline;
+  }
+}
 .hero-section {
   display: flex;
   flex-wrap: wrap;
@@ -253,7 +269,7 @@ nav.nav-scrolled {
 .hero-cta-wrap-mobile {
   display: none;
 }
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1065px) {
   .hero-cta-wrap-mobile {
     display: block;
     position: fixed;
@@ -318,7 +334,7 @@ nav.nav-scrolled {
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1065px) {
   .hero-cta-wrap {
     display: none;
   }
@@ -326,9 +342,11 @@ nav.nav-scrolled {
 .pain-section {
   background-image: url(../src/assets/backgrounds/virtical-background-svg.svg);
   position: relative;
+  min-height: 450px;
+  overflow: hidden;
 }
 .pain-section .pain-card {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -425,7 +443,10 @@ nav.nav-scrolled {
 .pain-section .pain-card .pain-image-wrap img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
+  animation: slideshow-fade-in 0.3s ease;
 }
 .pain-section .nav-arrows .arrow {
   position: absolute;
@@ -437,23 +458,49 @@ nav.nav-scrolled {
 .pain-section .nav-arrows .arrow:hover {
   transform: scale(1.1);
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  fill: #cdaa56;
+  color: #cdaa56;
 }
 .pain-section .nav-arrows .arrow.left-arrow {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
+  font-size: 50px;
 }
 .pain-section .nav-arrows .arrow.right-arrow {
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
+  font-size: 50px;
 }
-.pain-section .hidden-pain-card {
-  display: none;
+@keyframes slideshow-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.pain-section .active-pain-card {
+  display: flex;
 }
 
+@media (max-width: 1065px) {
+  .pain-section {
+    min-height: 830px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 1065px) and (max-width: 325px) {
+  .pain-section {
+    min-height: 860px;
+  }
+}
+@media (max-width: 1065px) {
+  .pain-section .pain-card {
+    gap: 0;
+  }
+}
 .cure-section {
   font-family: "Open-Sans", sans-serif;
   color: white;
