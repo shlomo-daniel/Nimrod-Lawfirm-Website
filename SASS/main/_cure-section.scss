@@ -151,10 +151,20 @@
           }
         }
       }
-      p {
-        max-width: 55ch;
-        @include mixin.paragraph-large;
-        font-weight: 400;
+      .reviews {
+        .review-item {
+          display: none;
+          padding-inline: setup.$page-padding;
+          min-height: 125px;
+          p {
+            @include mixin.paragraph-large;
+            max-width: 55ch;
+            font-weight: 400;
+          }
+          &.active-review {
+            display: block;
+          }
+        }
       }
     }
     .cure-section-cta {

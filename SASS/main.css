@@ -688,13 +688,21 @@ nav.nav-scrolled {
   transform: scale(1.5);
   color: #cdaa56;
 }
-.cure-section .cure-section-container .reviews-wrap p {
-  max-width: 55ch;
+.cure-section .cure-section-container .reviews-wrap .reviews .review-item {
+  display: none;
+  padding-inline: 2rem;
+  min-height: 125px;
+}
+.cure-section .cure-section-container .reviews-wrap .reviews .review-item p {
   font-family: "Open-Sans", sans-serif;
   font-weight: 400;
   font-size: calc(1rem * 1.5);
   line-height: 1.3;
+  max-width: 55ch;
   font-weight: 400;
+}
+.cure-section .cure-section-container .reviews-wrap .reviews .review-item.active-review {
+  display: block;
 }
 .cure-section .cure-section-container .cure-section-cta {
   justify-self: center;
