@@ -151,8 +151,12 @@ nav.nav-scrolled {
     max-height: 500px;
   }
   nav .nav-container ul {
+    display: none;
     flex-direction: column;
     align-items: center;
+  }
+  nav .nav-container ul.open-menu {
+    display: flex;
   }
   nav .nav-container ul li {
     margin: 0.5rem 0;
