@@ -1101,4 +1101,24 @@ footer .footer-bottom {
   font-size: calc(1rem / 1.5);
   text-align: center;
   padding: 1rem 0;
+}
+
+.fixed-contact-button {
+  position: fixed;
+  width: clamp(50px, 5vw, 70px);
+  padding: 10px;
+  z-index: 999;
+  bottom: 50px;
+  right: 20px;
+  background: black;
+  border-radius: 50px;
+}
+.fixed-contact-button a svg {
+  width: 100%;
+  height: auto;
+  fill: #fff;
+  transition: all 0.3s ease;
+}
+.fixed-contact-button a svg:hover {
+  fill: #cdaa56;
 }/*# sourceMappingURL=main.css.map */

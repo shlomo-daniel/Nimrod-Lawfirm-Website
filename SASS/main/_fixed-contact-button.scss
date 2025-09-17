@@ -1,0 +1,24 @@
+@use "../setup";
+.fixed-contact-button {
+  position: fixed;
+  width: clamp(50px, 5vw, 70px);
+
+  padding: 10px;
+  z-index: 999;
+  bottom: 50px;
+  right: 20px;
+
+  background: black;
+  border-radius: 50px;
+  a {
+    svg {
+      width: 100%;
+      height: auto;
+      fill: #fff;
+      transition: all 0.3s ease;
+      &:hover {
+        fill: setup.$accent-color;
+      }
+    }
+  }
+}
