@@ -1,15 +1,24 @@
 @use "../setup";
+@use "../animations";
+@use "../mixin";
 .fixed-contact-button {
+  // utility class to hide the button
+  &.hidden {
+    display: none;
+  }
+
   position: fixed;
   width: clamp(50px, 5vw, 70px);
 
-  padding: 10px;
   z-index: 999;
   bottom: 50px;
   right: 20px;
 
-  background: black;
+  @include mixin.glass-background;
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 50px;
+  animation: fadeIn 0.3s ease forwards;
+  padding: 8px;
   a {
     svg {
       width: 100%;

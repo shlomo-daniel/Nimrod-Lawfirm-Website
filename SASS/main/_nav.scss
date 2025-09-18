@@ -89,7 +89,7 @@ nav {
   .menu-icon {
     display: none;
   }
-
+  // utility class to change nav background on scroll
   &.nav-scrolled {
     background: rgba(0, 0, 0, 0.8);
   }
