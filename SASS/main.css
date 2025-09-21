@@ -360,8 +360,10 @@ nav.nav-scrolled {
 .pain-section .pain-card .pain-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   max-width: 500px;
+  min-height: 500px;
   gap: 1rem;
   font-family: "Open-Sans", sans-serif;
   padding: 1rem;
@@ -489,14 +491,14 @@ nav.nav-scrolled {
 
 @media (max-width: 1065px) {
   .pain-section {
-    min-height: 830px;
+    min-height: 940px;
     display: flex;
     align-items: center;
   }
 }
 @media (max-width: 1065px) and (max-width: 325px) {
   .pain-section {
-    min-height: 860px;
+    min-height: 910px;
   }
 }
 @media (max-width: 1065px) {

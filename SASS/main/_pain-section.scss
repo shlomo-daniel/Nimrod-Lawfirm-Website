@@ -19,8 +19,10 @@
     .pain-info {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       width: 100%;
       max-width: 500px;
+      min-height: 500px;
       gap: setup.$small-spacing;
 
       font-family: setup.$main-font;
@@ -134,9 +136,9 @@
 
 @media (max-width: setup.$breakpoint-desktop) {
   .pain-section {
-    min-height: 830px;
+    min-height: 940px;
     @media (max-width: setup.$breakpoint-mobile) {
-      min-height: 860px;
+      min-height: 910px;
     }
     display: flex;
     align-items: center;
