@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const shouldShow = window.scrollY > 100 && window.scrollY != atBottom;
 
     fixedButton.classList.toggle("show", shouldShow);
-
-    console.log({ scroll: window.scrollY, bottom: atBottom });
   }
 
   window.addEventListener("scroll", () => {
