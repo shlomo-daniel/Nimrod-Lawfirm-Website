@@ -2,9 +2,10 @@
 @use "../animations";
 @use "../mixin";
 .fixed-contact-button {
+  display: none;
   // utility class to hide the button
-  &.hidden {
-    display: none;
+  &.show {
+    display: block;
   }
 
   position: fixed;

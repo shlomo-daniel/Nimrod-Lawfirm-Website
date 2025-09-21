@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function updatebutton() {
     const atBottom = document.documentElement.scrollHeight - window.innerHeight;
 
-    const shouldHide = window.scrollY < 100 || window.scrollY >= atBottom;
+    const shouldShow = window.scrollY > 100 && window.scrollY != atBottom;
 
-    fixedButton.classList.toggle("hidden", shouldHide);
+    fixedButton.classList.toggle("show", shouldShow);
+
+    console.log({ scroll: window.scrollY, bottom: atBottom });
   }
 
   window.addEventListener("scroll", () => {
