@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -1164,4 +1165,392 @@ footer .footer-bottom {
 }
 .fixed-contact-button a svg:hover {
   fill: #cdaa56;
+}
+
+.nav-other-pages {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.about-page {
+  padding-top: 6rem;
+}
+.about-page .heading-wrap {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.about-page .heading-wrap h1,
+.about-page .heading-wrap h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #1d1f21;
+  margin-bottom: 1rem;
+}
+.about-page .heading-wrap h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem * 1.5 * 1.5);
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+.about-page .heading-wrap .accent-underline {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #cdaa56;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.about-nimrod-section {
+  padding: 4rem 2.5rem;
+  background: white;
+}
+.about-nimrod-section .about-nimrod-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.about-nimrod-section .about-nimrod-content .about-nimrod-text {
+  direction: rtl;
+}
+.about-nimrod-section .about-nimrod-content .about-nimrod-text p {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: calc(1 * 1rem);
+  line-height: 1.5;
+  color: #1d1f21;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+.about-nimrod-section .about-nimrod-content .about-nimrod-text h3 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem * 1.5);
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  color: #1d1f21;
+  margin: 2.5rem 0 1rem 0;
+  border-bottom: 2px solid #cdaa56;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+.about-nimrod-section .about-nimrod-content .about-nimrod-text ul {
+  margin: 1rem 0 2.5rem 2.5rem;
+}
+.about-nimrod-section .about-nimrod-content .about-nimrod-text ul li {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: calc(1 * 1rem);
+  line-height: 1.5;
+  color: #1d1f21;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-right: 20px;
+  list-style: none;
+}
+.about-nimrod-section .about-nimrod-content .about-nimrod-text ul li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: #cdaa56;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.about-nimrod-section .about-nimrod-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-nimrod-section .about-nimrod-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.about-nimrod-section .about-nimrod-image img:hover {
+  transform: scale(1.02);
+}
+
+.important-things-section {
+  padding: 4rem 2.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+.important-things-section .important-things-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.important-things-section .important-things-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+.important-things-section .important-thing-item {
+  background: white;
+  padding: 4rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.important-things-section .important-thing-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #cdaa56 0%, #faca5a 100%);
+}
+.important-things-section .important-thing-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+.important-things-section .important-thing-item .important-thing-icon {
+  margin-bottom: 2.5rem;
+}
+.important-things-section .important-thing-item .important-thing-icon svg {
+  color: #cdaa56;
+  filter: drop-shadow(0 2px 4px rgba(205, 170, 86, 0.3));
+}
+.important-things-section .important-thing-item h3 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem * 1.5);
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  color: #1d1f21;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.important-things-section .important-thing-item p {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: calc(1 * 1rem);
+  line-height: 1.5;
+  color: #1d1f21;
+  line-height: 1.7;
+  text-align: justify;
+}
+.important-things-section .important-things-cta {
+  text-align: center;
+}
+.important-things-section .important-things-cta button {
+  background: #cdaa56;
+  background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+  letter-spacing: 1px;
+  color: black;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  max-width: 400px;
+}
+.important-things-section .important-things-cta button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, white);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.important-things-section .important-things-cta button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #cdaa56;
+}
+.important-things-section .important-things-cta button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(500%);
+}
+.important-things-section .important-things-cta button a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 1065px) {
+  .about-page {
+    padding-top: 5rem;
+  }
+  .about-page .heading-wrap {
+    margin-bottom: 2.5rem;
+  }
+  .about-page .heading-wrap h1,
+  .about-page .heading-wrap h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
+  .about-nimrod-section {
+    padding: 2.5rem 1rem;
+  }
+  .about-nimrod-section .about-nimrod-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .about-nimrod-section .about-nimrod-content {
+    order: 2;
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text p {
+    text-align: center;
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text ul {
+    text-align: right;
+    margin-right: 1rem;
+  }
+  .about-nimrod-section .about-nimrod-image {
+    order: 1;
+  }
+  .about-nimrod-section .about-nimrod-image img {
+    max-width: 300px;
+  }
+  .important-things-section {
+    padding: 2.5rem 1rem;
+  }
+  .important-things-section .important-things-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .important-things-section .important-thing-item {
+    padding: 2.5rem 1rem;
+  }
+  .important-things-section .important-thing-item h3 {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+  }
+  .important-things-section .important-thing-item p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-page {
+    padding-top: 5.5rem;
+  }
+  .about-page .heading-wrap {
+    margin-bottom: 1rem;
+  }
+  .about-page .heading-wrap h1,
+  .about-page .heading-wrap h2 {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    margin-bottom: 0.5rem;
+  }
+  .about-page .heading-wrap .accent-underline {
+    width: 60px;
+    height: 3px;
+  }
+  .about-nimrod-section {
+    padding: 1rem 0.5rem;
+  }
+  .about-nimrod-section .about-nimrod-container {
+    gap: 1rem;
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text ul {
+    margin: 0.5rem 0 1rem 1rem;
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text ul li {
+    font-size: 0.9rem;
+  }
+  .about-nimrod-section .about-nimrod-image img {
+    max-width: 250px;
+    border-radius: 10px;
+  }
+  .important-things-section {
+    padding: 1rem 0.5rem;
+  }
+  .important-things-section .important-things-grid {
+    gap: 1rem;
+  }
+  .important-things-section .important-thing-item {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .important-things-section .important-thing-item .important-thing-icon {
+    margin-bottom: 1rem;
+  }
+  .important-things-section .important-thing-item .important-thing-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  .important-things-section .important-thing-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .important-things-section .important-thing-item p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .important-things-section .important-things-cta button {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .about-page .heading-wrap h1,
+  .about-page .heading-wrap h2 {
+    font-size: clamp(1rem, 6vw, 1.5rem);
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text p {
+    font-size: 0.85rem;
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text h3 {
+    font-size: 1rem;
+  }
+  .about-nimrod-section .about-nimrod-content .about-nimrod-text ul li {
+    font-size: 0.85rem;
+  }
+  .about-nimrod-section .about-nimrod-image img {
+    max-width: 200px;
+  }
+  .important-things-section .important-thing-item .important-thing-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  .important-things-section .important-thing-item h3 {
+    font-size: 0.9rem;
+  }
+  .important-things-section .important-thing-item p {
+    font-size: 0.8rem;
+  }
+  .important-things-section .important-things-cta button {
+    font-size: 0.8rem;
+    max-width: 280px;
+  }
+}
+@media print {
+  .about-page .important-thing-item {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+    page-break-inside: avoid;
+  }
 }/*# sourceMappingURL=main.css.map */
