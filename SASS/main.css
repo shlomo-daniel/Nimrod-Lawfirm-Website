@@ -219,13 +219,19 @@ nav.nav-scrolled {
   align-content: center;
   max-width: 500px;
   font-family: "Open-Sans", sans-serif;
-  font-weight: 400;
-  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1;
   letter-spacing: -2px;
   text-wrap: nowrap;
   color: white;
   text-shadow: 0px 0px rgb(38, 45, 56);
+}
+.hero-section .hero-heading h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 5rem);
+}
+.hero-section .hero-heading p {
+  font-weight: 400;
 }
 .hero-section .hero-cta-wrap {
   margin-top: 1rem;
@@ -372,8 +378,8 @@ nav.nav-scrolled {
 .pain-section .pain-card .pain-info h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
-  line-height: 1.3;
+  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1.2;
   letter-spacing: -1px;
 }
 .pain-section .pain-card .pain-info ul li {
@@ -518,14 +524,14 @@ nav.nav-scrolled {
 .cure-section .cure-section-container h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
-  line-height: 1.3;
+  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1.2;
   letter-spacing: -1px;
 }
 .cure-section .cure-section-container h3 {
   font-family: "Open-Sans", sans-serif;
-  font-weight: 700;
-  font-size: calc(1rem * 1.5);
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -0.5px;
 }
@@ -702,7 +708,7 @@ nav.nav-scrolled {
 .cure-section .cure-section-container .reviews-wrap .reviews .review-item p {
   font-family: "Open-Sans", sans-serif;
   font-weight: 400;
-  font-size: clamp(0.9rem, 2vw + 1rem, 1rem * 1.5);
+  font-size: clamp(0.8rem, 1vw + 1rem, 1rem * 1.5);
   line-height: 1.3;
   max-width: 55ch;
   font-weight: 400;
@@ -807,8 +813,8 @@ dialog .gallery-modal-content img {
 .faq-section .heading-wrap h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
-  line-height: 1.3;
+  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1.2;
   letter-spacing: -1px;
 }
 .faq-section .faq-icons-container {
@@ -832,7 +838,7 @@ dialog .gallery-modal-content img {
 .faq-section .faq-icons-container .faq-icon p {
   font-family: "Open-Sans", sans-serif;
   font-weight: 400;
-  font-size: clamp(0.9rem, 2vw + 1rem, 1rem * 1.5);
+  font-size: clamp(0.8rem, 1vw + 1rem, 1rem * 1.5);
   line-height: 1.3;
 }
 .faq-section .accordion {
@@ -857,8 +863,8 @@ dialog .gallery-modal-content img {
   padding: 24px 30px;
   text-align: right;
   font-family: "Open-Sans", sans-serif;
-  font-weight: 700;
-  font-size: calc(1rem * 1.5);
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -0.5px;
   font-weight: 500;
@@ -988,8 +994,8 @@ footer .footer-form-subsection h3 {
   color: #cdaa56;
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
-  line-height: 1.3;
+  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1.2;
   letter-spacing: -1px;
   margin-bottom: 1rem;
 }
@@ -1181,8 +1187,8 @@ footer .footer-bottom {
 .about-page .heading-wrap h1,
 .about-page .heading-wrap h2 {
   font-family: "Open-Sans", sans-serif;
-  font-weight: 400;
-  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1;
   letter-spacing: -2px;
   color: #1d1f21;
@@ -1191,8 +1197,8 @@ footer .footer-bottom {
 .about-page .heading-wrap h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
-  line-height: 1.3;
+  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1.2;
   letter-spacing: -1px;
 }
 .about-page .heading-wrap .accent-underline {
@@ -1235,8 +1241,8 @@ footer .footer-bottom {
 }
 .about-nimrod-section .about-nimrod-content .about-nimrod-text h3 {
   font-family: "Open-Sans", sans-serif;
-  font-weight: 700;
-  font-size: calc(1rem * 1.5);
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -0.5px;
   color: #1d1f21;
@@ -1333,8 +1339,8 @@ footer .footer-bottom {
 }
 .important-things-section .important-thing-item h3 {
   font-family: "Open-Sans", sans-serif;
-  font-weight: 700;
-  font-size: calc(1rem * 1.5);
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -0.5px;
   color: #1d1f21;
@@ -1408,10 +1414,6 @@ footer .footer-bottom {
   .about-page .heading-wrap {
     margin-bottom: 2.5rem;
   }
-  .about-page .heading-wrap h1,
-  .about-page .heading-wrap h2 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-  }
   .about-nimrod-section {
     padding: 2.5rem 1rem;
   }
@@ -1462,7 +1464,6 @@ footer .footer-bottom {
   }
   .about-page .heading-wrap h1,
   .about-page .heading-wrap h2 {
-    font-size: clamp(1.2rem, 5vw, 2rem);
     margin-bottom: 0.5rem;
   }
   .about-page .heading-wrap .accent-underline {
@@ -1480,7 +1481,6 @@ footer .footer-bottom {
     margin-bottom: 1rem;
   }
   .about-nimrod-section .about-nimrod-content .about-nimrod-text h3 {
-    font-size: 1.1rem;
     margin: 1rem 0 0.5rem 0;
   }
   .about-nimrod-section .about-nimrod-content .about-nimrod-text ul {
@@ -1511,7 +1511,6 @@ footer .footer-bottom {
     max-width: 100px;
   }
   .important-things-section .important-thing-item h3 {
-    font-size: 1rem;
     margin-bottom: 0.5rem;
   }
   .important-things-section .important-thing-item p {
@@ -1523,15 +1522,15 @@ footer .footer-bottom {
   }
 }
 @media screen and (max-width: 325px) {
-  .about-page .heading-wrap h1,
-  .about-page .heading-wrap h2 {
-    font-size: clamp(1rem, 6vw, 1.5rem);
-  }
   .about-nimrod-section .about-nimrod-content .about-nimrod-text p {
     font-size: 0.85rem;
   }
   .about-nimrod-section .about-nimrod-content .about-nimrod-text h3 {
-    font-size: 1rem;
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.9rem, 1vw + 1rem, 1rem * 1.5 * 1.5);
+    line-height: 1.3;
+    letter-spacing: -0.5px;
   }
   .about-nimrod-section .about-nimrod-content .about-nimrod-text ul li {
     font-size: 0.85rem;
@@ -1550,5 +1549,206 @@ footer .footer-bottom {
   }
   .important-things-section .important-things-cta button {
     max-width: 280px;
+  }
+}
+.success-page {
+  padding-top: 6rem;
+}
+.success-page .heading-wrap {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.success-page .heading-wrap h1 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #1d1f21;
+  margin-bottom: 1rem;
+}
+.success-page .heading-wrap .accent-underline {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #cdaa56;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.success-stories-section {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.success-stories-section .success-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .success-stories-section .success-stories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+.success-stories-section .success-story-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid transparent;
+}
+.success-stories-section .success-story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #cdaa56;
+}
+.success-stories-section .success-story-card .success-story-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.success-stories-section .success-story-card .success-story-header h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #1d1f21;
+  margin-bottom: 1rem;
+}
+.success-stories-section .success-story-card .success-story-header h3 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw + 1rem, 1rem * 1.5 * 1.5);
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  margin: 0;
+}
+.success-stories-section .success-story-card .success-story-proof {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  min-height: 300px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.success-stories-section .success-story-card .success-story-proof img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+.success-stories-section .success-story-card .success-story-proof img:hover {
+  transform: scale(1.05);
+}
+.success-stories-section .success-story-card .enlarge-text {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: calc(1 * 1rem);
+  line-height: 1.5;
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 0;
+  font-style: italic;
+}
+.success-stories-section .success-section-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+.success-stories-section .success-section-cta button {
+  background: #cdaa56;
+  background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
+  letter-spacing: 1px;
+  color: black;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.success-stories-section .success-section-cta button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, white);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.success-stories-section .success-section-cta button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #cdaa56;
+}
+.success-stories-section .success-section-cta button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(500%);
+}
+.success-stories-section .success-section-cta button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 325px) {
+  .success-stories-section {
+    padding: 1rem;
+  }
+  .success-stories-section .success-stories-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .success-stories-section .success-story-card {
+    padding: 1rem;
+  }
+  .success-stories-section .success-story-card .success-story-proof {
+    min-height: 250px;
+  }
+  .success-stories-section .success-story-card .success-story-header {
+    margin-bottom: 1rem;
+  }
+  .success-stories-section .success-story-card .success-story-header h3 {
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.9rem, 1vw + 1rem, 1rem * 1.5 * 1.5);
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+  }
+}
+@media screen and (min-width: 325px) and (max-width: 1065px) {
+  .success-stories-section .success-stories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1065px) {
+  .success-stories-section .success-stories-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

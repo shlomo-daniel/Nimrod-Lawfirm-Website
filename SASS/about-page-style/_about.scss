@@ -214,10 +214,10 @@
     .heading-wrap {
       margin-bottom: setup.$medium-spacing;
 
-      h1,
-      h2 {
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
-      }
+      // h1,
+      // h2 {
+      // font-size: clamp(1.5rem, 4vw, 2.5rem);
+      // }
     }
   }
 
@@ -286,7 +286,7 @@
 
       h1,
       h2 {
-        font-size: clamp(1.2rem, 5vw, 2rem);
+        // font-size: clamp(1.2rem, 5vw, 2rem);
         margin-bottom: setup.$micro-spacing;
       }
 
@@ -312,7 +312,7 @@
         }
 
         h3 {
-          font-size: 1.1rem;
+          // font-size: 1.1rem;
           margin: setup.$small-spacing 0 setup.$micro-spacing 0;
         }
 
@@ -356,7 +356,7 @@
       }
 
       h3 {
-        font-size: 1rem;
+        // font-size: 1rem;
         margin-bottom: setup.$micro-spacing;
       }
 
@@ -377,14 +377,14 @@
 
 // Very small mobile devices
 @media screen and (max-width: setup.$breakpoint-mobile) {
-  .about-page {
-    .heading-wrap {
-      h1,
-      h2 {
-        font-size: clamp(1rem, 6vw, 1.5rem);
-      }
-    }
-  }
+  // .about-page {
+  //   .heading-wrap {
+  //     h1,
+  //     h2 {
+  // font-size: clamp(1rem, 6vw, 1.5rem);
+  //     }
+  //   }
+  // }
 
   .about-nimrod-section {
     .about-nimrod-content {
@@ -394,7 +394,7 @@
         }
 
         h3 {
-          font-size: 1rem;
+          @include mixin.h3-settings;
         }
 
         ul li {

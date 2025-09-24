@@ -3,29 +3,29 @@
 // font mixins
 @mixin h1-settings {
   font-family: setup.$main-font;
-  font-weight: 400;
-  font-size: clamp(1rem, 2vw + 1rem, setup.$font-size-large);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3vw + 1rem, setup.$font-size-large);
   line-height: 1;
   letter-spacing: -2px;
 }
 @mixin h2-settings {
   font-family: setup.$main-font;
   font-weight: 700;
-  font-size: clamp(1.5rem, 2vw + 1rem, setup.$font-size-large);
-  line-height: 1.3;
+  font-size: clamp(1rem, 2vw + 1rem, setup.$font-size-large);
+  line-height: 1.2;
   letter-spacing: -1px;
 }
 @mixin h3-settings {
   font-family: setup.$main-font;
-  font-weight: 700;
-  font-size: setup.$font-size-medium;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw + 1rem, setup.$font-size-large);
   line-height: 1.3;
   letter-spacing: -0.5px;
 }
 @mixin paragraph-large {
   font-family: setup.$main-font;
   font-weight: 400;
-  font-size: clamp(0.9rem, 2vw + 1rem, setup.$font-size-medium);
+  font-size: clamp(0.8rem, 1vw + 1rem, setup.$font-size-medium);
   line-height: 1.3;
 }
 @mixin paragraph-normal {
