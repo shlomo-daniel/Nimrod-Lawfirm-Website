@@ -362,6 +362,7 @@ nav.nav-scrolled {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: justify;
   width: 100%;
   max-width: 500px;
   min-height: 500px;
@@ -378,7 +379,7 @@ nav.nav-scrolled {
 }
 .pain-section .pain-card .pain-info ul li {
   line-height: 1.7;
-  text-align: right;
+  text-align: justify;
 }
 .pain-section .pain-card .pain-info .pain-cta-warp {
   margin-top: 1rem;
@@ -1176,7 +1177,7 @@ footer .footer-bottom {
 }
 .about-page .heading-wrap {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 .about-page .heading-wrap h1,
 .about-page .heading-wrap h2 {
@@ -1216,6 +1217,9 @@ footer .footer-bottom {
   max-width: 1400px;
   margin: 0 auto;
 }
+.about-nimrod-section .about-nimrod-content {
+  margin: 0 auto;
+}
 .about-nimrod-section .about-nimrod-content .about-nimrod-text {
   direction: rtl;
 }
@@ -1225,9 +1229,10 @@ footer .footer-bottom {
   font-size: calc(1 * 1rem);
   line-height: 1.5;
   color: #1d1f21;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   line-height: 1.7;
   text-align: justify;
+  max-width: 70ch;
 }
 .about-nimrod-section .about-nimrod-content .about-nimrod-text h3 {
   font-family: "Open-Sans", sans-serif;
@@ -1292,6 +1297,7 @@ footer .footer-bottom {
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
   margin-bottom: 4rem;
+  justify-self: center;
 }
 .important-things-section .important-thing-item {
   background: white;
@@ -1302,6 +1308,7 @@ footer .footer-bottom {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  max-width: 70ch;
 }
 .important-things-section .important-thing-item::before {
   content: "";
