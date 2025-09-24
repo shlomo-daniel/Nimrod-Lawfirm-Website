@@ -789,6 +789,7 @@ dialog .gallery-modal-content .modal-x-button {
   height: 50px;
   border-radius: 25%;
   font-size: 3rem;
+  text-align: center;
   color: rgb(255, 255, 255);
   background: #cdaa56;
   cursor: pointer;
