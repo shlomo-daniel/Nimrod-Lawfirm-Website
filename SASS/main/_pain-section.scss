@@ -20,7 +20,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: justify;
       width: 100%;
       max-width: 500px;
       min-height: 500px;
@@ -137,9 +136,9 @@
 
 @media (max-width: setup.$breakpoint-desktop) {
   .pain-section {
-    min-height: 940px;
+    min-height: 905px;
     @media (max-width: setup.$breakpoint-mobile) {
-      min-height: 910px;
+      min-height: 830px;
     }
     display: flex;
     align-items: center;

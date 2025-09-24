@@ -236,7 +236,7 @@ nav.nav-scrolled {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -296,7 +296,7 @@ nav.nav-scrolled {
     background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
     font-family: "Open-Sans", sans-serif;
     font-weight: 700;
-    font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+    font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
     letter-spacing: 1px;
     color: black;
     border: none;
@@ -362,7 +362,6 @@ nav.nav-scrolled {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: justify;
   width: 100%;
   max-width: 500px;
   min-height: 500px;
@@ -373,7 +372,7 @@ nav.nav-scrolled {
 .pain-section .pain-card .pain-info h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.5 * 1.5);
+  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -1px;
 }
@@ -390,7 +389,7 @@ nav.nav-scrolled {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -493,14 +492,14 @@ nav.nav-scrolled {
 
 @media (max-width: 1065px) {
   .pain-section {
-    min-height: 940px;
+    min-height: 905px;
     display: flex;
     align-items: center;
   }
 }
 @media (max-width: 1065px) and (max-width: 325px) {
   .pain-section {
-    min-height: 910px;
+    min-height: 830px;
   }
 }
 @media (max-width: 1065px) {
@@ -519,7 +518,7 @@ nav.nav-scrolled {
 .cure-section .cure-section-container h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.5 * 1.5);
+  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -1px;
 }
@@ -567,7 +566,7 @@ nav.nav-scrolled {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -703,7 +702,7 @@ nav.nav-scrolled {
 .cure-section .cure-section-container .reviews-wrap .reviews .review-item p {
   font-family: "Open-Sans", sans-serif;
   font-weight: 400;
-  font-size: calc(1rem * 1.5);
+  font-size: clamp(0.9rem, 2vw + 1rem, 1rem * 1.5);
   line-height: 1.3;
   max-width: 55ch;
   font-weight: 400;
@@ -725,7 +724,7 @@ nav.nav-scrolled {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -808,7 +807,7 @@ dialog .gallery-modal-content img {
 .faq-section .heading-wrap h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.5 * 1.5);
+  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -1px;
 }
@@ -833,7 +832,7 @@ dialog .gallery-modal-content img {
 .faq-section .faq-icons-container .faq-icon p {
   font-family: "Open-Sans", sans-serif;
   font-weight: 400;
-  font-size: calc(1rem * 1.5);
+  font-size: clamp(0.9rem, 2vw + 1rem, 1rem * 1.5);
   line-height: 1.3;
 }
 .faq-section .accordion {
@@ -989,7 +988,7 @@ footer .footer-form-subsection h3 {
   color: #cdaa56;
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.5 * 1.5);
+  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -1px;
   margin-bottom: 1rem;
@@ -1027,7 +1026,7 @@ footer .footer-form-subsection form button {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -1192,7 +1191,7 @@ footer .footer-bottom {
 .about-page .heading-wrap h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1rem * 1.5 * 1.5);
+  font-size: clamp(1.5rem, 2vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1.3;
   letter-spacing: -1px;
 }
@@ -1324,11 +1323,13 @@ footer .footer-bottom {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 .important-things-section .important-thing-item .important-thing-icon {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 .important-things-section .important-thing-item .important-thing-icon svg {
   color: #cdaa56;
-  filter: drop-shadow(0 2px 4px rgba(205, 170, 86, 0.3));
+  width: 100%;
+  max-width: 150px;
+  height: auto;
 }
 .important-things-section .important-thing-item h3 {
   font-family: "Open-Sans", sans-serif;
@@ -1357,7 +1358,7 @@ footer .footer-bottom {
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
-  font-size: clamp(0.5rem, 2vw + 1rem * 1.5, 1.5rem);
+  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
   letter-spacing: 1px;
   color: black;
   border: none;
@@ -1494,6 +1495,7 @@ footer .footer-bottom {
   }
   .important-things-section {
     padding: 1rem 0.5rem;
+    padding-top: 2.5rem;
   }
   .important-things-section .important-things-grid {
     gap: 1rem;
@@ -1506,8 +1508,7 @@ footer .footer-bottom {
     margin-bottom: 1rem;
   }
   .important-things-section .important-thing-item .important-thing-icon svg {
-    width: 50px;
-    height: 50px;
+    max-width: 100px;
   }
   .important-things-section .important-thing-item h3 {
     font-size: 1rem;
@@ -1518,7 +1519,6 @@ footer .footer-bottom {
     line-height: 1.6;
   }
   .important-things-section .important-things-cta button {
-    font-size: 0.9rem;
     max-width: 300px;
   }
 }
@@ -1540,8 +1540,7 @@ footer .footer-bottom {
     max-width: 200px;
   }
   .important-things-section .important-thing-item .important-thing-icon svg {
-    width: 40px;
-    height: 40px;
+    max-width: 80px;
   }
   .important-things-section .important-thing-item h3 {
     font-size: 0.9rem;
@@ -1550,14 +1549,6 @@ footer .footer-bottom {
     font-size: 0.8rem;
   }
   .important-things-section .important-things-cta button {
-    font-size: 0.8rem;
     max-width: 280px;
-  }
-}
-@media print {
-  .about-page .important-thing-item {
-    -moz-column-break-inside: avoid;
-         break-inside: avoid;
-    page-break-inside: avoid;
   }
 }/*# sourceMappingURL=main.css.map */

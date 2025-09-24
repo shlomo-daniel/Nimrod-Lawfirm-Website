@@ -161,11 +161,13 @@
     }
 
     .important-thing-icon {
-      margin-bottom: setup.$medium-spacing;
+      margin-bottom: setup.$small-spacing;
 
       svg {
         color: setup.$accent-color;
-        filter: drop-shadow(0 2px 4px rgba(205, 170, 86, 0.3));
+        width: 100%;
+        max-width: 150px;
+        height: auto;
       }
     }
 
@@ -335,6 +337,7 @@
 
   .important-things-section {
     padding: setup.$small-spacing setup.$micro-spacing;
+    padding-top: setup.$medium-spacing;
 
     .important-things-grid {
       gap: setup.$small-spacing;
@@ -348,8 +351,7 @@
         margin-bottom: setup.$small-spacing;
 
         svg {
-          width: 50px;
-          height: 50px;
+          max-width: 100px;
         }
       }
 
@@ -366,7 +368,7 @@
 
     .important-things-cta {
       button {
-        font-size: 0.9rem;
+        // font-size: 1rem;
         max-width: 300px;
       }
     }
@@ -412,8 +414,7 @@
     .important-thing-item {
       .important-thing-icon {
         svg {
-          width: 40px;
-          height: 40px;
+          max-width: 80px;
         }
       }
 
@@ -428,19 +429,9 @@
 
     .important-things-cta {
       button {
-        font-size: 0.8rem;
+        // font-size: 1rem;
         max-width: 280px;
       }
-    }
-  }
-}
-
-// Print styles
-@media print {
-  .about-page {
-    .important-thing-item {
-      break-inside: avoid;
-      page-break-inside: avoid;
     }
   }
 }
