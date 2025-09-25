@@ -59,7 +59,7 @@
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      border-color: setup.$accent-color;
+      border: 2px solid rgba(205, 170, 86, 0.3);
     }
 
     .success-story-header {

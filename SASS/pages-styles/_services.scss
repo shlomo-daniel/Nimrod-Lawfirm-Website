@@ -1,0 +1,180 @@
+@use "../setup";
+@use "../mixin";
+
+// Services Page Styles
+.services-page {
+  padding-top: 4rem;
+  background-image: url("../src/assets/backgrounds/virtical-background-svg.svg");
+  // Services intro section
+  .services-intro-section {
+    padding: setup.$large-spacing setup.$page-padding;
+    text-align: center;
+
+    .heading-wrap {
+      h1 {
+        @include mixin.h1-settings;
+        color: setup.$primary-color;
+        margin-bottom: setup.$small-spacing;
+      }
+
+      .accent-underline {
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: setup.$accent-color;
+        margin: setup.$small-spacing auto;
+        border-radius: 2px;
+      }
+    }
+
+    .services-intro-content {
+      margin-top: setup.$medium-spacing;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+
+      p {
+        @include mixin.paragraph-normal;
+        color: setup.$primary-color;
+        margin-bottom: setup.$medium-spacing;
+        text-align: right;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        @media (max-width: setup.$breakpoint-tablet) {
+          @include mixin.paragraph-normal;
+        }
+      }
+    }
+
+    @media (max-width: setup.$breakpoint-tablet) {
+      padding: setup.$medium-spacing setup.$small-spacing;
+    }
+  }
+
+  // Services categories section
+  .services-categories-section {
+    padding: setup.$medium-spacing setup.$page-padding setup.$large-spacing;
+
+    .service-category {
+      margin-bottom: setup.$large-spacing;
+      background: setup.$secondary-color;
+      padding: setup.$medium-spacing;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(29, 31, 33, 0.1);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(205, 170, 86, 0.1);
+
+      &:hover {
+        // transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(29, 31, 33, 0.15);
+        border: 2px solid rgba(205, 170, 86, 0.3);
+      }
+
+      .heading-wrap {
+        text-align: center;
+        margin-bottom: setup.$medium-spacing;
+
+        h2 {
+          @include mixin.h2-settings;
+          color: setup.$primary-color;
+          margin-bottom: setup.$small-spacing;
+
+          @media (max-width: setup.$breakpoint-tablet) {
+            @include mixin.h2-settings;
+          }
+        }
+
+        .accent-underline {
+          display: block;
+          width: 60px;
+          height: 3px;
+          background: setup.$accent-color;
+          margin: setup.$small-spacing auto;
+          border-radius: 2px;
+        }
+      }
+
+      .service-details-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+
+        li {
+          padding: setup.$small-spacing 0;
+          border-bottom: 1px solid rgba(29, 31, 33, 0.1);
+          @include mixin.paragraph-normal;
+          color: setup.$primary-color;
+          position: relative;
+          padding-right: setup.$medium-spacing;
+
+          &:before {
+            content: "✓";
+            position: absolute;
+            right: 0;
+            top: setup.$small-spacing;
+            color: setup.$accent-color;
+            font-weight: bold;
+            font-size: setup.$font-size-medium;
+          }
+
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+
+          strong {
+            color: setup.$primary-color;
+            font-weight: 600;
+          }
+
+          @media (max-width: setup.$breakpoint-tablet) {
+            @include mixin.paragraph-normal;
+            padding: setup.$micro-spacing 0;
+            padding-right: setup.$small-spacing;
+          }
+        }
+      }
+
+      @media (max-width: setup.$breakpoint-tablet) {
+        padding: setup.$small-spacing;
+        margin-bottom: setup.$medium-spacing;
+      }
+    }
+
+    @media (max-width: setup.$breakpoint-tablet) {
+      padding: setup.$small-spacing setup.$small-spacing setup.$medium-spacing;
+    }
+  }
+
+  // Mobile responsive enhancements
+  @media (max-width: setup.$breakpoint-mobile) {
+    .services-page {
+      .services-intro-section {
+        padding: setup.$small-spacing setup.$micro-spacing;
+      }
+
+      .services-categories-section {
+        padding: setup.$micro-spacing setup.$micro-spacing setup.$small-spacing;
+
+        .service-category {
+          padding: setup.$small-spacing;
+          margin-bottom: setup.$small-spacing;
+
+          .heading-wrap h2 {
+            @include mixin.h3-settings;
+          }
+
+          .service-details-list li {
+            @include mixin.paragraph-normal;
+            padding: setup.$micro-spacing 0;
+            padding-right: setup.$small-spacing;
+          }
+        }
+      }
+    }
+  }
+}
