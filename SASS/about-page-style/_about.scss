@@ -8,7 +8,7 @@
 // About page main container
 .about-page {
   padding-top: 6rem;
-
+  background-image: url("../src/assets/backgrounds/virtical-background-svg.svg");
   // Shared heading styles
   .heading-wrap {
     text-align: center;
@@ -17,7 +17,6 @@
     h1,
     h2 {
       @include mixin.h1-settings;
-      color: setup.$primary-color;
       margin-bottom: setup.$small-spacing;
     }
 
@@ -39,7 +38,6 @@
 // About Nimrod Section
 .about-nimrod-section {
   padding: setup.$large-spacing setup.$medium-spacing;
-  background: white;
 
   .about-nimrod-container {
     display: grid;
@@ -120,6 +118,11 @@
 .important-things-section {
   padding: setup.$large-spacing setup.$medium-spacing;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background-image: url("../../src/assets/backgrounds/virtical-background-dark.svg");
+
+  h2 {
+    color: white;
+  }
 
   .important-things-container {
     max-width: setup.$website-max-width;

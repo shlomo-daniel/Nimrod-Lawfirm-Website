@@ -1180,6 +1180,7 @@ footer .footer-bottom {
 
 .about-page {
   padding-top: 6rem;
+  background-image: url("../src/assets/backgrounds/virtical-background-svg.svg");
 }
 .about-page .heading-wrap {
   text-align: center;
@@ -1192,7 +1193,6 @@ footer .footer-bottom {
   font-size: clamp(1.3rem, 3vw + 1rem, 1rem * 1.5 * 1.5);
   line-height: 1;
   letter-spacing: -2px;
-  color: #1d1f21;
   margin-bottom: 1rem;
 }
 .about-page .heading-wrap h2 {
@@ -1213,7 +1213,6 @@ footer .footer-bottom {
 
 .about-nimrod-section {
   padding: 4rem 2.5rem;
-  background: white;
 }
 .about-nimrod-section .about-nimrod-container {
   display: grid;
@@ -1293,6 +1292,10 @@ footer .footer-bottom {
 .important-things-section {
   padding: 4rem 2.5rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background-image: url("../../src/assets/backgrounds/virtical-background-dark.svg");
+}
+.important-things-section h2 {
+  color: white;
 }
 .important-things-section .important-things-container {
   max-width: 1400px;
@@ -1554,6 +1557,7 @@ footer .footer-bottom {
 }
 .success-page {
   padding-top: 6rem;
+  background-image: url("../src/assets/backgrounds/virtical-background-svg.svg");
 }
 .success-page .heading-wrap {
   text-align: center;
