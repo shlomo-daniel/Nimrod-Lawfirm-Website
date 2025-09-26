@@ -65,12 +65,11 @@
       border-radius: 15px;
       box-shadow: 0 8px 30px rgba(29, 31, 33, 0.1);
       transition: all 0.3s ease;
-      border: 1px solid rgba(205, 170, 86, 0.1);
-
+      border: 3px solid transparent;
       &:hover {
         // transform: translateY(-5px);
         box-shadow: 0 12px 40px rgba(29, 31, 33, 0.15);
-        border: 2px solid rgba(205, 170, 86, 0.3);
+        border: 3px solid rgba(205, 170, 86, 0.3);
       }
 
       .heading-wrap {
@@ -112,13 +111,11 @@
           padding-right: setup.$medium-spacing;
 
           &:before {
-            content: "✓";
+            content: "◀";
             position: absolute;
             right: 0;
-            top: setup.$small-spacing;
             color: setup.$accent-color;
             font-weight: bold;
-            font-size: setup.$font-size-medium;
           }
 
           &:last-child {
@@ -171,7 +168,7 @@
           .service-details-list li {
             @include mixin.paragraph-normal;
             padding: setup.$micro-spacing 0;
-            padding-right: setup.$small-spacing;
+            padding-right: 1.5rem;
           }
         }
       }

@@ -54,12 +54,12 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      border: 2px solid rgba(205, 170, 86, 0.3);
+      border: 3px solid rgba(205, 170, 86, 0.3);
     }
 
     .success-story-header {

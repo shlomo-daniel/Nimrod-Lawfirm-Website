@@ -1608,12 +1608,12 @@ footer .footer-bottom {
   display: flex;
   flex-direction: column;
   height: 100%;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
 }
 .success-stories-section .success-story-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  border: 2px solid rgba(205, 170, 86, 0.3);
+  border: 3px solid rgba(205, 170, 86, 0.3);
 }
 .success-stories-section .success-story-card .success-story-header {
   text-align: center;
@@ -1824,11 +1824,11 @@ footer .footer-bottom {
   border-radius: 15px;
   box-shadow: 0 8px 30px rgba(29, 31, 33, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid rgba(205, 170, 86, 0.1);
+  border: 3px solid transparent;
 }
 .services-page .services-categories-section .service-category:hover {
   box-shadow: 0 12px 40px rgba(29, 31, 33, 0.15);
-  border: 2px solid rgba(205, 170, 86, 0.3);
+  border: 3px solid rgba(205, 170, 86, 0.3);
 }
 .services-page .services-categories-section .service-category .heading-wrap {
   text-align: center;
@@ -1878,13 +1878,11 @@ footer .footer-bottom {
   padding-right: 2.5rem;
 }
 .services-page .services-categories-section .service-category .service-details-list li:before {
-  content: "✓";
+  content: "◀";
   position: absolute;
   right: 0;
-  top: 1rem;
   color: #cdaa56;
   font-weight: bold;
-  font-size: calc(1rem * 1.5);
 }
 .services-page .services-categories-section .service-category .service-details-list li:last-child {
   border-bottom: none;
@@ -1939,6 +1937,6 @@ footer .footer-bottom {
     font-size: calc(1 * 1rem);
     line-height: 1.5;
     padding: 0.5rem 0;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
