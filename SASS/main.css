@@ -1293,7 +1293,7 @@ footer .footer-bottom {
 .important-things-section {
   padding: 4rem 2.5rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  background-image: url("../../src/assets/backgrounds/virtical-background-dark.svg");
+  background-image: url("../src/assets/backgrounds/virtical-background-dark.svg");
 }
 .important-things-section h2 {
   color: white;
