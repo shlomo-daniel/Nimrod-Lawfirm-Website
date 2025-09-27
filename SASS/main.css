@@ -254,7 +254,7 @@ nav.nav-scrolled {
   width: 100%;
   max-width: 350px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .hero-section .hero-cta-wrap button::before {
   content: "";
@@ -265,7 +265,7 @@ nav.nav-scrolled {
   height: 200%;
   background: linear-gradient(0deg, transparent, transparent 30%, white);
   transform: rotate(-45deg);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 .hero-section .hero-cta-wrap button:hover {
@@ -314,7 +314,7 @@ nav.nav-scrolled {
     width: 100%;
     max-width: 350px;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     width: 95vw;
     opacity: 0;
     animation-delay: 1.5s;
@@ -329,7 +329,7 @@ nav.nav-scrolled {
     height: 200%;
     background: linear-gradient(0deg, transparent, transparent 30%, white);
     transform: rotate(-45deg);
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     opacity: 0;
   }
   .hero-cta-wrap-mobile button:hover {
@@ -418,7 +418,7 @@ nav.nav-scrolled {
   height: 200%;
   background: linear-gradient(0deg, transparent, transparent 30%, white);
   transform: rotate(-45deg);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 .pain-section .pain-card .pain-info .pain-cta-warp button:hover {
@@ -568,7 +568,7 @@ nav.nav-scrolled {
   width: 100%;
   max-width: 350px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   background: #cdaa56;
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
@@ -590,7 +590,7 @@ nav.nav-scrolled {
   height: 200%;
   background: linear-gradient(0deg, transparent, transparent 30%, white);
   transform: rotate(-45deg);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 .cure-section .cure-section-container .cure-section-expertise .more-info-btn button:hover {
@@ -726,7 +726,7 @@ nav.nav-scrolled {
   width: 100%;
   max-width: 350px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   background: #cdaa56;
   background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
   font-family: "Open-Sans", sans-serif;
@@ -748,7 +748,7 @@ nav.nav-scrolled {
   height: 200%;
   background: linear-gradient(0deg, transparent, transparent 30%, white);
   transform: rotate(-45deg);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 .cure-section .cure-section-container .cure-section-cta button:hover {
@@ -1045,7 +1045,7 @@ footer .footer-form-subsection form button {
   width: 100%;
   max-width: 350px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   width: 100%;
   max-width: 630px;
 }
@@ -1058,7 +1058,7 @@ footer .footer-form-subsection form button::before {
   height: 200%;
   background: linear-gradient(0deg, transparent, transparent 30%, white);
   transform: rotate(-45deg);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 footer .footer-form-subsection form button:hover {
@@ -1380,7 +1380,7 @@ footer .footer-bottom {
   width: 100%;
   max-width: 350px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   max-width: 400px;
 }
 .important-things-section .important-things-cta button::before {
@@ -1392,7 +1392,7 @@ footer .footer-bottom {
   height: 200%;
   background: linear-gradient(0deg, transparent, transparent 30%, white);
   transform: rotate(-45deg);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 .important-things-section .important-things-cta button:hover {
@@ -1691,7 +1691,7 @@ footer .footer-bottom {
   width: 100%;
   max-width: 350px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .success-stories-section .success-section-cta button::before {
   content: "";
@@ -1702,7 +1702,7 @@ footer .footer-bottom {
   height: 200%;
   background: linear-gradient(0deg, transparent, transparent 30%, white);
   transform: rotate(-45deg);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 .success-stories-section .success-section-cta button:hover {
