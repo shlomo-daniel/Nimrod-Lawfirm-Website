@@ -668,6 +668,7 @@ nav.nav-scrolled {
 }
 .cure-section .cure-section-container .proofs-container .proof-images-wrapper {
   display: flex;
+  align-items: center;
   margin: 2.5rem 0;
   gap: 1rem;
 }

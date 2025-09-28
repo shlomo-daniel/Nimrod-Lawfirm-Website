@@ -116,6 +116,7 @@
       backdrop-filter: brightness(0.5) blur(2px);
       .proof-images-wrapper {
         display: flex;
+        align-items: center;
         margin: setup.$medium-spacing 0;
         gap: setup.$small-spacing;
         .proof-image-wrap {
