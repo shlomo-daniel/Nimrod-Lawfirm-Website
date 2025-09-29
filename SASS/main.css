@@ -1586,6 +1586,48 @@ footer .footer-bottom {
   margin: 0 auto;
   border-radius: 2px;
 }
+.success-page .success-section-cta {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+.success-page .success-section-cta button {
+  background: #cdaa56;
+  background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
+  letter-spacing: 1px;
+  color: black;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.success-page .success-section-cta button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, white);
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.success-page .success-section-cta button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #cdaa56;
+}
+.success-page .success-section-cta button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(500%);
+}
 
 .success-stories-section {
   padding: 2rem;
@@ -1675,55 +1717,6 @@ footer .footer-bottom {
   font-size: 0.85rem;
   margin: 0;
   font-style: italic;
-}
-.success-stories-section .success-section-cta {
-  text-align: center;
-  margin-top: 4rem;
-}
-.success-stories-section .success-section-cta button {
-  background: #cdaa56;
-  background: linear-gradient(90deg, rgb(205, 170, 86) 0%, rgb(250, 202, 90) 50%, rgb(255, 219, 135) 100%);
-  font-family: "Open-Sans", sans-serif;
-  font-weight: 700;
-  font-size: clamp(1rem, 1vw + 1rem, 1rem * 1.5);
-  letter-spacing: 1px;
-  color: black;
-  border: none;
-  padding: 0.5em;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-.success-stories-section .success-section-cta button::before {
-  content: "";
-  position: absolute;
-  top: -100%;
-  left: -100%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(0deg, transparent, transparent 30%, white);
-  transform: rotate(-45deg);
-  transition: all 0.3s ease;
-  opacity: 0;
-}
-.success-stories-section .success-section-cta button:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 5px #cdaa56;
-}
-.success-stories-section .success-section-cta button:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(500%);
-}
-.success-stories-section .success-section-cta button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: inherit;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 325px) {

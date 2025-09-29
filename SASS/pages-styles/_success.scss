@@ -25,6 +25,15 @@
       border-radius: 2px;
     }
   }
+
+  .success-section-cta {
+    text-align: center;
+    padding-bottom: setup.$medium-spacing;
+    button {
+      @include mixin.button-style;
+      @include mixin.button-settings;
+    }
+  }
 }
 
 // Success Stories Section
@@ -112,24 +121,6 @@
       font-size: 0.85rem;
       margin: 0;
       font-style: italic;
-    }
-  }
-
-  .success-section-cta {
-    text-align: center;
-    margin-top: setup.$large-spacing;
-
-    button {
-      @include mixin.button-style;
-      @include mixin.button-settings;
-
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        color: inherit;
-        text-decoration: none;
-      }
     }
   }
 }

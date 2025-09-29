@@ -5,8 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>דף ראשי - משרד עו"ד נמרוד גארי</title>
+
+    <!-- HTTP/2/3 Performance Hints -->
+    <link rel="preload" href="./SASS/main.css?v=0.9.6" as="style">
+    <link rel="preload" href="./src/fonts/Open_Sans/OpenSans-VariableFont_wdthwght.ttf" as="font" type="font/ttf"
+        crossorigin>
+    <link rel="preload" href="./public/images/lawyer-nimrod-no-bg.png" as="image" fetchpriority="high">
+    <link rel="preload" href="./public/images/nimrod-lawfirm-logo.png" as="image">
+    <!-- HTTP/3 Connection Hint for External CDN -->
+    <link rel="preconnect" href="https://cdn.enable.co.il">
+
     <link rel="shortcut icon" href="./public/images/nimrod-lawfirm-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./SASS/main.css?v=0.9.5">
+    <link rel="stylesheet" href="./SASS/main.css?v=0.9.6">
     <script src="./JS/responsive_nav.js" defer></script>
     <script src="./JS/navStyleOnScroll.js" defer></script>
     <script src="./JS/fixedButtonDisplay.js" defer></script>
