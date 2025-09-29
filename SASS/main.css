@@ -1070,6 +1070,10 @@ footer .footer-form-subsection form button:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(500%);
 }
+footer .footer-form-subsection .form-terms {
+  margin-top: 1rem;
+  text-align: center;
+}
 footer h4 {
   font-size: calc(1rem * 1.5);
   color: #cdaa56;
