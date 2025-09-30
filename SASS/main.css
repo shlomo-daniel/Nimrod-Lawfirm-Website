@@ -618,7 +618,7 @@ nav.nav-scrolled {
   border: 1px solid rgba(255, 255, 255, 0.0784313725);
   border-radius: 10px;
   box-shadow: inset 0 1px 1px 1px rgba(255, 255, 255, 0.1607843137);
-  background-image: url(../public/images/services-bg-2-mod.jpg);
+  background-image: url(../public/images/services-bg-2-mod.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
