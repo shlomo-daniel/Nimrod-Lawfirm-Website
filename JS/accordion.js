@@ -2,7 +2,13 @@ class ModernAccordion {
   constructor(selector) {
     this.accordion = document.querySelector(selector);
     this.items = this.accordion.querySelectorAll(".accordion-item");
+    this.isMobile = window.innerWidth <= 768;
     this.init();
+
+    // Listen for resize to update mobile detection
+    window.addEventListener("resize", () => {
+      this.isMobile = window.innerWidth <= 768;
+    });
   }
 
   init() {
@@ -42,13 +48,23 @@ class ModernAccordion {
       const scrollHeight = content.scrollHeight;
       content.style.maxHeight = scrollHeight + "px";
 
-      // Add smooth scroll to view if needed
-      setTimeout(() => {
-        clickedItem.scrollIntoView({
-          behavior: "smooth",
-          block: "nearest",
-        });
-      }, 200);
+      // Only use smooth scroll on desktop, use immediate scroll on mobile for better performance
+      if (!this.isMobile) {
+        setTimeout(() => {
+          clickedItem.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
+        }, 150);
+      } else {
+        // Immediate scroll on mobile with shorter timeout
+        setTimeout(() => {
+          clickedItem.scrollIntoView({
+            behavior: "auto",
+            block: "nearest",
+          });
+        }, 100);
+      }
     } else {
       clickedItem.classList.remove("active");
       const content = clickedItem.querySelector(".accordion-content");

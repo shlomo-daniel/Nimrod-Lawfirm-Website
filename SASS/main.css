@@ -812,6 +812,7 @@ dialog .gallery-modal-content img {
   /* Pulse animation for active item */
   /* Mobile responsive */
   /* Enhanced visual effects */
+  /* Mobile optimizations - reduce animations for better performance */
 }
 .faq-section .heading-wrap h2 {
   font-family: "Open-Sans", sans-serif;
@@ -847,8 +848,6 @@ dialog .gallery-modal-content img {
 .faq-section .accordion {
   direction: rtl;
   background: rgba(255, 255, 255, 0.95);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -874,7 +873,7 @@ dialog .gallery-modal-content img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: color 0.2s ease;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -899,7 +898,7 @@ dialog .gallery-modal-content img {
   content: "";
   position: absolute;
   background: white;
-  transition: all 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 .faq-section .accordion-icon::before {
   width: 12px;
@@ -915,8 +914,9 @@ dialog .gallery-modal-content img {
 .faq-section .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(102, 126, 234, 0.02);
+  will-change: max-height;
 }
 .faq-section .accordion-item.active .accordion-content {
   max-height: 500px;
@@ -929,15 +929,14 @@ dialog .gallery-modal-content img {
   line-height: 1.5;
   padding: 30px 30px 30px 30px;
   opacity: 0;
-  transform: translateY(-10px);
-  transition: all 0.3s ease 0.1s;
+  transform: translateY(-5px);
+  transition: opacity 0.2s ease 0.1s, transform 0.2s ease 0.1s;
 }
 .faq-section .accordion-item.active .accordion-text {
   opacity: 1;
   transform: translateY(0);
 }
 .faq-section .accordion-item.active .accordion-header {
-  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1411764706);
   color: #cdaa56;
 }
 @media (max-width: 768px) {
@@ -955,7 +954,7 @@ dialog .gallery-modal-content img {
   }
 }
 .faq-section .accordion-item {
-  transition: transform 0.2s ease;
+  transition: transform 0.15s ease;
 }
 .faq-section .accordion-item:hover {
   transform: translateX(2px);
@@ -963,6 +962,33 @@ dialog .gallery-modal-content img {
 .faq-section .accordion-item.active {
   transform: translateX(0);
   box-shadow: inset -4px 0 0 #cdaa56;
+}
+@media (max-width: 768px) {
+  .faq-section .accordion-item {
+    transition: none;
+  }
+  .faq-section .accordion-item:hover {
+    transform: none;
+  }
+  .faq-section .accordion-content {
+    transition: max-height 0.25s ease;
+  }
+  .faq-section .accordion-text {
+    transition: opacity 0.15s ease 0.05s;
+    transform: none;
+  }
+  .faq-section .accordion-item.active .accordion-text {
+    transform: none;
+  }
+  .faq-section .accordion-header {
+    transition: color 0.15s ease;
+  }
+  .faq-section .accordion-icon {
+    transition: transform 0.2s ease;
+  }
+  .faq-section .accordion-item.active .accordion-header {
+    box-shadow: none;
+  }
 }
 
 footer {
