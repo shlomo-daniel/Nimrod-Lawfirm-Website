@@ -149,6 +149,9 @@
     opacity: 0;
     transform: translateY(-5px);
     transition: opacity 0.2s ease 0.1s, transform 0.2s ease 0.1s;
+    p {
+      max-width: 75ch;
+    }
   }
 
   .accordion-item.active .accordion-text {

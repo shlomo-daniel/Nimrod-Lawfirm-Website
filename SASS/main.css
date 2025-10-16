@@ -936,6 +936,9 @@ dialog .gallery-modal-content img {
   transform: translateY(-5px);
   transition: opacity 0.2s ease 0.1s, transform 0.2s ease 0.1s;
 }
+.faq-section .accordion-text p {
+  max-width: 75ch;
+}
 .faq-section .accordion-item.active .accordion-text {
   opacity: 1;
   transform: translateY(0);
