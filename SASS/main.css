@@ -912,14 +912,18 @@ dialog .gallery-modal-content img {
   transform: rotate(45deg);
 }
 .faq-section .accordion-content {
-  max-height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
   overflow: hidden;
-  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(102, 126, 234, 0.02);
-  will-change: max-height;
+  will-change: grid-template-rows;
+}
+.faq-section .accordion-content > * {
+  min-height: 0;
 }
 .faq-section .accordion-item.active .accordion-content {
-  max-height: 500px;
+  grid-template-rows: 1fr;
 }
 .faq-section .accordion-text {
   text-align: start;
@@ -927,7 +931,7 @@ dialog .gallery-modal-content img {
   font-weight: 400;
   font-size: calc(1 * 1rem);
   line-height: 1.5;
-  padding: 30px 30px 30px 30px;
+  padding: 0 30px 0 0;
   opacity: 0;
   transform: translateY(-5px);
   transition: opacity 0.2s ease 0.1s, transform 0.2s ease 0.1s;
@@ -935,6 +939,7 @@ dialog .gallery-modal-content img {
 .faq-section .accordion-item.active .accordion-text {
   opacity: 1;
   transform: translateY(0);
+  padding: 0 30px 30px 30px;
 }
 .faq-section .accordion-item.active .accordion-header {
   color: #cdaa56;
@@ -971,11 +976,12 @@ dialog .gallery-modal-content img {
     transform: none;
   }
   .faq-section .accordion-content {
-    transition: max-height 0.25s ease;
+    transition: grid-template-rows 0.25s ease;
   }
   .faq-section .accordion-text {
     transition: opacity 0.15s ease 0.05s;
     transform: none;
+    padding: 0 30px 0 0;
   }
   .faq-section .accordion-item.active .accordion-text {
     transform: none;

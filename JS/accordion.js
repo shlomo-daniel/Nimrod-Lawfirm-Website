@@ -32,21 +32,16 @@ class ModernAccordion {
   toggleItem(clickedItem, clickedIndex) {
     const isActive = clickedItem.classList.contains("active");
 
-    // Close all items with smooth animation
-    this.items.forEach((item, index) => {
+    // Close all items
+    this.items.forEach((item) => {
       if (item !== clickedItem) {
         item.classList.remove("active");
-        const content = item.querySelector(".accordion-content");
-        content.style.maxHeight = "0px";
       }
     });
 
     // Toggle clicked item
     if (!isActive) {
       clickedItem.classList.add("active");
-      const content = clickedItem.querySelector(".accordion-content");
-      const scrollHeight = content.scrollHeight;
-      content.style.maxHeight = scrollHeight + "px";
 
       // Only use smooth scroll on desktop, use immediate scroll on mobile for better performance
       if (!this.isMobile) {
@@ -67,8 +62,6 @@ class ModernAccordion {
       }
     } else {
       clickedItem.classList.remove("active");
-      const content = clickedItem.querySelector(".accordion-content");
-      content.style.maxHeight = "0px";
     }
   }
 }
