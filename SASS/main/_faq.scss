@@ -5,6 +5,7 @@
   padding: setup.$medium-spacing;
   text-align: center;
   .heading-wrap {
+    margin-bottom: setup.$small-spacing;
     h2 {
       @include mixin.h2-settings;
     }
@@ -16,7 +17,7 @@
     justify-content: space-evenly;
     margin: setup.$medium-spacing 0;
     .faq-icon {
-      width: 150px;
+      width: clamp(135px, 8vw, 150px);
       svg {
         .accent-path {
           fill: setup.$accent-color;
@@ -212,6 +213,7 @@
     }
 
     .accordion-text {
+      display: none;
       transition: opacity 0.15s ease 0.05s;
       transform: none;
       padding: 0 30px 0 0;
@@ -219,6 +221,7 @@
 
     .accordion-item.active .accordion-text {
       transform: none;
+      display: block;
     }
 
     .accordion-header {

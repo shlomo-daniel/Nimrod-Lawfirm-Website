@@ -814,6 +814,9 @@ dialog .gallery-modal-content img {
   /* Enhanced visual effects */
   /* Mobile optimizations - reduce animations for better performance */
 }
+.faq-section .heading-wrap {
+  margin-bottom: 1rem;
+}
 .faq-section .heading-wrap h2 {
   font-family: "Open-Sans", sans-serif;
   font-weight: 700;
@@ -829,7 +832,7 @@ dialog .gallery-modal-content img {
   margin: 2.5rem 0;
 }
 .faq-section .faq-icons-container .faq-icon {
-  width: 150px;
+  width: clamp(135px, 8vw, 150px);
 }
 .faq-section .faq-icons-container .faq-icon svg {
   width: 100%;
@@ -982,12 +985,14 @@ dialog .gallery-modal-content img {
     transition: grid-template-rows 0.25s ease;
   }
   .faq-section .accordion-text {
+    display: none;
     transition: opacity 0.15s ease 0.05s;
     transform: none;
     padding: 0 30px 0 0;
   }
   .faq-section .accordion-item.active .accordion-text {
     transform: none;
+    display: block;
   }
   .faq-section .accordion-header {
     transition: color 0.15s ease;
