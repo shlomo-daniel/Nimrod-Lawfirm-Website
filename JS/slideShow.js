@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       currentIndex++;
       slides[currentIndex].classList.add("active-pain-card");
       // slideDots[currentIndex].classList.add("active-dot");
-    }, 3000);
+    }, 6000);
     return intervalID;
   }
 
