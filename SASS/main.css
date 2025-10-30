@@ -207,7 +207,7 @@ nav.nav-scrolled {
   background: radial-gradient(circle, rgb(49, 55, 71) 0%, rgb(10, 0, 0) 100%);
 }
 .hero-section .hero-image-wrap {
-  max-width: 450px;
+  max-width: 350px;
 }
 .hero-section .hero-image-wrap img {
   max-width: 100%;
