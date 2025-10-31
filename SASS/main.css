@@ -210,6 +210,11 @@ nav.nav-scrolled {
 .hero-section .hero-image-wrap {
   max-width: 350px;
 }
+@media screen and (max-width: 325px) {
+  .hero-section .hero-image-wrap {
+    width: 200px;
+  }
+}
 .hero-section .hero-image-wrap img {
   max-width: 100%;
   height: auto;
