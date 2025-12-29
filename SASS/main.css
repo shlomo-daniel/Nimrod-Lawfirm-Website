@@ -649,7 +649,7 @@ nav.nav-scrolled {
     width: 95%;
   }
   .cure-section .cure-section-container .services-container .service-item.service-item p {
-    text-underline-offset: 10px;
+    text-decoration: none;
   }
 }
 .cure-section .cure-section-container .services-container .service-item:hover {
