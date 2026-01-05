@@ -1860,11 +1860,14 @@ footer .footer-bottom {
 }
 .services-page .services-categories-section {
   padding: 2.5rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
 }
 .services-page .services-categories-section .service-category {
-  margin-bottom: 4rem;
   background: white;
   padding: 2.5rem;
+  align-content: center;
   border-radius: 15px;
   box-shadow: 0 8px 30px rgba(29, 31, 33, 0.1);
   transition: all 0.3s ease;
@@ -1876,7 +1879,6 @@ footer .footer-bottom {
 }
 .services-page .services-categories-section .service-category .heading-wrap {
   text-align: center;
-  margin-bottom: 2.5rem;
 }
 .services-page .services-categories-section .service-category .heading-wrap h2 {
   font-family: "Open-Sans", sans-serif;
@@ -1885,7 +1887,6 @@ footer .footer-bottom {
   line-height: 1.2;
   letter-spacing: -1px;
   color: #1d1f21;
-  margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
   .services-page .services-categories-section .service-category .heading-wrap h2 {

@@ -58,10 +58,13 @@
   .services-categories-section {
     padding: setup.$medium-spacing setup.$page-padding setup.$large-spacing;
 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: setup.$small-spacing;
     .service-category {
-      margin-bottom: setup.$large-spacing;
       background: setup.$secondary-color;
       padding: setup.$medium-spacing;
+      align-content: center;
       border-radius: 15px;
       box-shadow: 0 8px 30px rgba(29, 31, 33, 0.1);
       transition: all 0.3s ease;
@@ -74,12 +77,10 @@
 
       .heading-wrap {
         text-align: center;
-        margin-bottom: setup.$medium-spacing;
 
         h2 {
           @include mixin.h2-settings;
           color: setup.$primary-color;
-          margin-bottom: setup.$small-spacing;
 
           @media (max-width: setup.$breakpoint-tablet) {
             @include mixin.h2-settings;
