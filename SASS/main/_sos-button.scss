@@ -1,7 +1,7 @@
 @use "../setup";
 @use "../animations";
 @use "../mixin";
-.fixed-contact-button {
+.fixed-contact-button-sos {
   display: none;
   // utility class to hide the button
   &.show {
@@ -11,27 +11,42 @@
   position: fixed;
   width: clamp(50px, 5vw, 70px);
   @media (max-width: setup.$breakpoint-mobile) {
-    width: clamp(48px, 8vw, 60px);
+    width: clamp(45px, 8vw, 60px);
   }
 
   z-index: 999;
-  bottom: 50px;
+  bottom: 120px;
   right: 20px;
 
   @include mixin.glass-background;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 0, 0, 0.8);
   border-radius: 50px;
   animation: fadeIn 0.3s ease forwards;
   padding: 8px;
+  &:hover {
+    background: rgba(255, 0, 0, 1);
+    svg {
+      fill: #fff;
+      transform: scale(1.1);
+    }
+  }
   a {
     svg {
       width: 100%;
       height: auto;
       fill: #fff;
       transition: all 0.3s ease;
-      &:hover {
-        fill: setup.$accent-color;
-      }
     }
+  }
+
+  ::after {
+    content: "SOS";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
   }
 }

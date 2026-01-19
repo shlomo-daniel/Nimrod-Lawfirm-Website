@@ -1216,6 +1216,11 @@ footer .footer-bottom {
 .fixed-contact-button.show {
   display: block;
 }
+@media (max-width: 325px) {
+  .fixed-contact-button {
+    width: clamp(48px, 8vw, 60px);
+  }
+}
 .fixed-contact-button a svg {
   width: 100%;
   height: auto;
@@ -1224,6 +1229,58 @@ footer .footer-bottom {
 }
 .fixed-contact-button a svg:hover {
   fill: #cdaa56;
+}
+
+.fixed-contact-button-sos {
+  display: none;
+  position: fixed;
+  width: clamp(50px, 5vw, 70px);
+  z-index: 999;
+  bottom: 120px;
+  right: 20px;
+  padding: 0.3rem;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.0588235294);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(255, 255, 255, 0.0784313725);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px 1px rgba(255, 255, 255, 0.1607843137);
+  background: rgba(255, 0, 0, 0.8);
+  border-radius: 50px;
+  animation: fadeIn 0.3s ease forwards;
+  padding: 8px;
+}
+.fixed-contact-button-sos.show {
+  display: block;
+}
+@media (max-width: 325px) {
+  .fixed-contact-button-sos {
+    width: clamp(45px, 8vw, 60px);
+  }
+}
+.fixed-contact-button-sos:hover {
+  background: rgb(255, 0, 0);
+}
+.fixed-contact-button-sos:hover svg {
+  fill: #fff;
+  transform: scale(1.1);
+}
+.fixed-contact-button-sos a svg {
+  width: 100%;
+  height: auto;
+  fill: #fff;
+  transition: all 0.3s ease;
+}
+.fixed-contact-button-sos ::after {
+  content: "SOS";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .nav-other-pages {
