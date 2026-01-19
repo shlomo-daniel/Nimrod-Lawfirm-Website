@@ -10,9 +10,6 @@
 
   position: fixed;
   width: clamp(50px, 5vw, 70px);
-  @media (max-width: setup.$breakpoint-mobile) {
-    width: clamp(45px, 8vw, 60px);
-  }
 
   z-index: 999;
   bottom: 50px;

@@ -1216,11 +1216,6 @@ footer .footer-bottom {
 .fixed-contact-button.show {
   display: block;
 }
-@media (max-width: 325px) {
-  .fixed-contact-button {
-    width: clamp(45px, 8vw, 60px);
-  }
-}
 .fixed-contact-button a svg {
   width: 100%;
   height: auto;
@@ -1253,11 +1248,6 @@ footer .footer-bottom {
 }
 .fixed-contact-button-sos.show {
   display: block;
-}
-@media (max-width: 325px) {
-  .fixed-contact-button-sos {
-    width: clamp(45px, 8vw, 60px);
-  }
 }
 .fixed-contact-button-sos:hover {
   background: rgb(255, 0, 0);
