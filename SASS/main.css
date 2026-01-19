@@ -1218,7 +1218,7 @@ footer .footer-bottom {
 }
 @media (max-width: 325px) {
   .fixed-contact-button {
-    width: clamp(48px, 8vw, 60px);
+    width: clamp(45px, 8vw, 60px);
   }
 }
 .fixed-contact-button a svg {
