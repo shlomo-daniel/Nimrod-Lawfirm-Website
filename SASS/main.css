@@ -59,7 +59,6 @@ nav {
   max-width: clamp(300px, 95%, 1350px);
   transition: all 0.5s ease;
   padding: 0.3rem;
-  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.0588235294);
   background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
@@ -256,11 +255,6 @@ nav.nav-scrolled {
   padding: 0.5em;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  overflow: hidden;
-  transition: all 0.3s ease;
 }
 .hero-section .hero-cta-wrap button::before {
   content: "";
@@ -282,19 +276,26 @@ nav.nav-scrolled {
   opacity: 1;
   transform: rotate(-45deg) translateY(500%);
 }
+.hero-section .hero-cta-wrap button {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
 
 .hero-cta-wrap-mobile {
   display: none;
 }
 @media screen and (max-width: 1065px) {
+  .hero-cta-wrap-mobile .hero-cta-wrap {
+    display: none;
+  }
   .hero-cta-wrap-mobile {
     display: block;
     position: fixed;
     z-index: 10;
     bottom: 10px;
-  }
-  .hero-cta-wrap-mobile .hero-cta-wrap {
-    display: none;
   }
   @keyframes fadeIn {
     0% {
@@ -316,15 +317,6 @@ nav.nav-scrolled {
     padding: 0.5em;
     border-radius: 5px;
     cursor: pointer;
-    position: relative;
-    width: 100%;
-    max-width: 350px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    width: 95vw;
-    opacity: 0;
-    animation-delay: 1.5s;
-    animation: fadeIn 0.9s forwards;
   }
   .hero-cta-wrap-mobile button::before {
     content: "";
@@ -345,6 +337,17 @@ nav.nav-scrolled {
   .hero-cta-wrap-mobile button:hover::before {
     opacity: 1;
     transform: rotate(-45deg) translateY(500%);
+  }
+  .hero-cta-wrap-mobile button {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 95vw;
+    opacity: 0;
+    animation-delay: 1.5s;
+    animation: fadeIn 0.9s forwards;
   }
   .hero-cta-wrap-mobile button.hidden {
     display: none;
@@ -409,11 +412,6 @@ nav.nav-scrolled {
   padding: 0.5em;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
-  width: 100%;
-  max-width: 300px;
-  overflow: hidden;
-  transition: all 0.5s ease;
 }
 .pain-section .pain-card .pain-info .pain-cta-warp button::before {
   content: "";
@@ -434,6 +432,13 @@ nav.nav-scrolled {
 .pain-section .pain-card .pain-info .pain-cta-warp button:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(500%);
+}
+.pain-section .pain-card .pain-info .pain-cta-warp button {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 .pain-section .pain-card .pain-info .pain-cta-warp button::before {
   content: "";
@@ -617,7 +622,6 @@ nav.nav-scrolled {
 }
 .cure-section .cure-section-container .services-container {
   padding: 0.3rem;
-  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.0588235294);
   background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
@@ -669,8 +673,7 @@ nav.nav-scrolled {
 }
 .cure-section .cure-section-container .proofs-container {
   padding: 4rem 2rem;
-  -webkit-backdrop-filter: brightness(0.5) blur(2px);
-          backdrop-filter: brightness(0.5) blur(2px);
+  backdrop-filter: brightness(0.5) blur(2px);
 }
 .cure-section .cure-section-container .proofs-container .proof-images-wrapper {
   display: flex;
@@ -815,10 +818,6 @@ dialog .gallery-modal-content img {
   background-image: url("../src/assets/backgrounds/virtical-background-svg.svg");
   padding: 2.5rem;
   text-align: center;
-  /* Pulse animation for active item */
-  /* Mobile responsive */
-  /* Enhanced visual effects */
-  /* Mobile optimizations - reduce animations for better performance */
 }
 .faq-section .heading-wrap {
   margin-bottom: 1rem;
@@ -840,13 +839,13 @@ dialog .gallery-modal-content img {
 .faq-section .faq-icons-container .faq-icon {
   width: clamp(135px, 8vw, 150px);
 }
+.faq-section .faq-icons-container .faq-icon svg .accent-path {
+  fill: #cdaa56;
+}
 .faq-section .faq-icons-container .faq-icon svg {
   width: 100%;
   max-width: 150px;
   height: auto;
-}
-.faq-section .faq-icons-container .faq-icon svg .accent-path {
-  fill: #cdaa56;
 }
 .faq-section .faq-icons-container .faq-icon p {
   font-family: "Open-Sans", sans-serif;
@@ -953,8 +952,14 @@ dialog .gallery-modal-content img {
   transform: translateY(0);
   padding: 0 30px 30px 30px;
 }
+.faq-section {
+  /* Pulse animation for active item */
+}
 .faq-section .accordion-item.active .accordion-header {
   color: #cdaa56;
+}
+.faq-section {
+  /* Mobile responsive */
 }
 @media (max-width: 768px) {
   .faq-section .title {
@@ -970,6 +975,9 @@ dialog .gallery-modal-content img {
     font-size: 0.9rem;
   }
 }
+.faq-section {
+  /* Enhanced visual effects */
+}
 .faq-section .accordion-item {
   transition: transform 0.15s ease;
 }
@@ -979,6 +987,9 @@ dialog .gallery-modal-content img {
 .faq-section .accordion-item.active {
   transform: translateX(0);
   box-shadow: inset -4px 0 0 #cdaa56;
+}
+.faq-section {
+  /* Mobile optimizations - reduce animations for better performance */
 }
 @media (max-width: 768px) {
   .faq-section .accordion-item {
@@ -1029,7 +1040,6 @@ footer .footer-form-subsection {
   align-items: center;
   margin-inline: 2rem;
   padding: 0.3rem;
-  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.0588235294);
   background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
@@ -1088,13 +1098,6 @@ footer .footer-form-subsection form button {
   padding: 0.5em;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 630px;
 }
 footer .footer-form-subsection form button::before {
   content: "";
@@ -1115,6 +1118,15 @@ footer .footer-form-subsection form button:hover {
 footer .footer-form-subsection form button:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(500%);
+}
+footer .footer-form-subsection form button {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 630px;
 }
 footer .footer-form-subsection .form-terms {
   margin-top: 1rem;
@@ -1195,13 +1207,17 @@ footer .footer-bottom {
 }
 .fixed-contact-button {
   display: none;
+}
+.fixed-contact-button.show {
+  display: block;
+}
+.fixed-contact-button {
   position: fixed;
-  width: clamp(50px, 5vw, 70px);
+  width: clamp(50px, 5vw, 60px);
   z-index: 999;
   bottom: 50px;
   right: 20px;
   padding: 0.3rem;
-  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.0588235294);
   background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
@@ -1212,9 +1228,6 @@ footer .footer-bottom {
   border-radius: 50px;
   animation: fadeIn 0.3s ease forwards;
   padding: 8px;
-}
-.fixed-contact-button.show {
-  display: block;
 }
 .fixed-contact-button a svg {
   width: 100%;
@@ -1228,13 +1241,17 @@ footer .footer-bottom {
 
 .fixed-contact-button-sos {
   display: none;
+}
+.fixed-contact-button-sos.show {
+  display: block;
+}
+.fixed-contact-button-sos {
   position: fixed;
-  width: clamp(50px, 5vw, 70px);
+  width: clamp(50px, 5vw, 60px);
   z-index: 999;
   bottom: 120px;
   right: 20px;
   padding: 0.3rem;
-  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.0588235294);
   background-image: linear-gradient(rgba(255, 255, 255, 0.1607843137), rgba(255, 255, 255, 0));
@@ -1245,9 +1262,6 @@ footer .footer-bottom {
   border-radius: 50px;
   animation: fadeIn 0.3s ease forwards;
   padding: 8px;
-}
-.fixed-contact-button-sos.show {
-  display: block;
 }
 .fixed-contact-button-sos:hover {
   background: rgb(255, 0, 0);
@@ -1474,12 +1488,6 @@ footer .footer-bottom {
   padding: 0.5em;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  max-width: 400px;
 }
 .important-things-section .important-things-cta button::before {
   content: "";
@@ -1500,6 +1508,14 @@ footer .footer-bottom {
 .important-things-section .important-things-cta button:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(500%);
+}
+.important-things-section .important-things-cta button {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 400px;
 }
 .important-things-section .important-things-cta button a {
   display: block;
@@ -1695,11 +1711,6 @@ footer .footer-bottom {
   padding: 0.5em;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  overflow: hidden;
-  transition: all 0.3s ease;
 }
 .success-page .success-section-cta button::before {
   content: "";
@@ -1720,6 +1731,13 @@ footer .footer-bottom {
 .success-page .success-section-cta button:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(500%);
+}
+.success-page .success-section-cta button {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .success-stories-section {
