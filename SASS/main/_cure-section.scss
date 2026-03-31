@@ -96,7 +96,7 @@
         &:hover {
           background-color: color.change(setup.$accent-color, $alpha: 0.8);
           color: white;
-          cursor: pointer;
+          cursor: default;
         }
         p {
           position: absolute;

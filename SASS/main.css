@@ -659,7 +659,7 @@ nav.nav-scrolled {
 .cure-section .cure-section-container .services-container .service-item:hover {
   background-color: rgba(205, 170, 86, 0.8);
   color: white;
-  cursor: pointer;
+  cursor: default;
 }
 .cure-section .cure-section-container .services-container .service-item p {
   position: absolute;
