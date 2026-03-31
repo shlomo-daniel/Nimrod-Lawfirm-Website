@@ -33,16 +33,18 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(banner);
 
     // dismiss handler
-    banner.querySelector(".cookie-banner__btn").addEventListener("click", () => {
-      banner.classList.add("cookie-banner--hiding");
-      banner.addEventListener(
-        "animationend",
-        () => {
-          banner.remove();
-        },
-        { once: true },
-      );
-      localStorage.setItem(CONSENT_KEY, String(Date.now()));
-    });
+    banner
+      .querySelector(".cookie-banner__btn")
+      .addEventListener("click", () => {
+        banner.classList.add("cookie-banner--hiding");
+        banner.addEventListener(
+          "animationend",
+          () => {
+            banner.remove();
+          },
+          { once: true },
+        );
+        localStorage.setItem(CONSENT_KEY, String(Date.now()));
+      });
   }, 5000);
 });
