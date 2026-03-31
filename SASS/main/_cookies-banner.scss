@@ -1,0 +1,118 @@
+@use "../setup" as setup;
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: setup.$primary-color;
+  padding: 0.8rem setup.$page-padding;
+  direction: rtl;
+  transform: translateY(100%);
+  animation: cookieSlideUp 0.4s ease forwards;
+
+  &.cookie-banner--hiding {
+    animation: cookieSlideDown 0.3s ease forwards;
+  }
+}
+
+.cookie-banner__inner {
+  max-width: setup.$website-max-width;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.cookie-banner__text {
+  color: setup.$secondary-color;
+  font-family: setup.$main-font;
+  font-size: 0.85rem;
+  margin: 0;
+
+  a {
+    color: setup.$accent-color;
+    text-decoration: underline;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+}
+
+.cookie-banner__btn {
+  background: setup.$accent-color;
+  color: setup.$primary-color;
+  font-family: setup.$main-font;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0.35em 1.2em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+@keyframes cookieSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes cookieSlideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+// tablet & mobile — slim top bar (avoids fixed buttons at bottom-right)
+@media (max-width: setup.$breakpoint-tablet) {
+  .cookie-banner {
+    bottom: auto;
+    top: 0;
+    padding: 0.6rem 1rem;
+  }
+
+  .cookie-banner__inner {
+    gap: 0.8rem;
+  }
+
+  .cookie-banner__text {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .cookie-banner__btn {
+    font-size: 0.75rem;
+    padding: 0.3em 0.8em;
+  }
+
+  @keyframes cookieSlideUp {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes cookieSlideDown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+}
